@@ -1,0 +1,162 @@
+[
+  {
+    "id": "canada_business_corporations_act",
+    "title": "Canada Business Corporations Act",
+    "url": "https://laws-lois.justice.gc.ca/eng/acts/c-44/index.html",
+    "jurisdiction": "federal",
+    "topic": "corporate",
+    "source_type": "statute"
+  },
+  {
+    "id": "corporations_canada_federal_incorporation",
+    "title": "Corporations Canada - Federal Incorporation",
+    "url": "https://ised-isde.canada.ca/site/corporations-canada/en/federal-incorporation",
+    "jurisdiction": "federal",
+    "topic": "corporate",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "corporations_canada_annual_return",
+    "title": "Corporations Canada - Annual Return for Business Corporations",
+    "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+    "jurisdiction": "federal",
+    "topic": "corporate",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "corporations_canada_individuals_significant_control",
+    "title": "Corporations Canada - Individuals with Significant Control",
+    "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
+    "jurisdiction": "federal",
+    "topic": "corporate",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "ontario_business_registry",
+    "title": "Ontario Business Registry",
+    "url": "https://www.ontario.ca/page/ontario-business-registry",
+    "jurisdiction": "Ontario",
+    "topic": "corporate",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "cra_business_number_program_accounts",
+    "title": "CRA - Register for a Business Number and Program Accounts",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/how-register/resident.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "cra_gst_hst_businesses",
+    "title": "CRA - GST/HST for Businesses",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "cra_payroll_deductions_remittances",
+    "title": "CRA - Employers' Guide: Payroll Deductions and Remittances",
+    "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001.html",
+    "jurisdiction": "federal",
+    "topic": "payroll",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "cra_sred_tax_incentive_program",
+    "title": "CRA - Scientific Research and Experimental Development Tax Incentive Program",
+    "url": "https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "pipeda",
+    "title": "Personal Information Protection and Electronic Documents Act",
+    "url": "https://laws-lois.justice.gc.ca/eng/acts/p-8.6/",
+    "jurisdiction": "federal",
+    "topic": "privacy",
+    "source_type": "statute"
+  },
+  {
+    "id": "opc_privacy_guide_for_businesses",
+    "title": "Office of the Privacy Commissioner - Privacy Guide for Businesses",
+    "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/guide_org/",
+    "jurisdiction": "federal",
+    "topic": "privacy",
+    "source_type": "regulator_guide"
+  },
+  {
+    "id": "opc_mandatory_privacy_breach_reporting",
+    "title": "Office of the Privacy Commissioner - Mandatory Privacy Breach Reporting",
+    "url": "https://www.priv.gc.ca/en/privacy-topics/business-privacy/breaches-and-safeguards/privacy-breaches-at-your-business/gd_pb_201810/",
+    "jurisdiction": "federal",
+    "topic": "privacy",
+    "source_type": "regulator_guide"
+  },
+  {
+    "id": "crtc_casl_guidance",
+    "title": "CRTC - Canada's Anti-Spam Legislation Guidance",
+    "url": "https://crtc.gc.ca/eng/com500/guide.htm",
+    "jurisdiction": "federal",
+    "topic": "marketing",
+    "source_type": "regulator_guide"
+  },
+  {
+    "id": "competition_bureau_deceptive_marketing",
+    "title": "Competition Bureau - Misleading Representations and Deceptive Marketing Practices",
+    "url": "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/misleading-representations-and-deceptive-marketing-practices",
+    "jurisdiction": "federal",
+    "topic": "marketing",
+    "source_type": "regulator_guide"
+  },
+  {
+    "id": "cipo_trademarks_guide",
+    "title": "Canadian Intellectual Property Office - Trademarks Guide",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/trademarks/trademarks-guide",
+    "jurisdiction": "federal",
+    "topic": "intellectual_property",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "cyber_centre_baseline_controls_smes",
+    "title": "Canadian Centre for Cyber Security - Baseline Cyber Security Controls for Small and Medium Organizations",
+    "url": "https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations",
+    "jurisdiction": "federal",
+    "topic": "cybersecurity",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "ontario_employment_standards_act_guide",
+    "title": "Ontario - Your Guide to the Employment Standards Act",
+    "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
+    "jurisdiction": "Ontario",
+    "topic": "employment",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "ontario_health_safety_small_businesses",
+    "title": "Ontario - Health and Safety for Small Businesses",
+    "url": "https://www.ontario.ca/page/health-and-safety-small-businesses",
+    "jurisdiction": "Ontario",
+    "topic": "workplace_safety",
+    "source_type": "government_guide"
+  },
+  {
+    "id": "wsib_register_with_us",
+    "title": "WSIB - Register with Us",
+    "url": "https://www.wsib.ca/en/businesses/registration-and-coverage/register-us",
+    "jurisdiction": "Ontario",
+    "topic": "workplace_safety",
+    "source_type": "regulator_guide"
+  },
+  {
+    "id": "ontario_accessibility_rules_businesses_nonprofits",
+    "title": "Ontario - Accessibility Rules for Businesses and Non-Profits",
+    "url": "https://www.ontario.ca/page/accessibility-rules-businesses-and-non-profits",
+    "jurisdiction": "Ontario",
+    "topic": "accessibility",
+    "source_type": "government_guide"
+  }
+]
