@@ -5,7 +5,8 @@
     "url": "https://laws-lois.justice.gc.ca/eng/acts/c-44/index.html",
     "jurisdiction": "federal",
     "topic": "corporate",
-    "source_type": "statute"
+    "source_type": "statute",
+    "enabled": true
   },
   {
     "id": "corporations_canada_federal_incorporation",
@@ -13,7 +14,8 @@
     "url": "https://ised-isde.canada.ca/site/corporations-canada/en/federal-incorporation",
     "jurisdiction": "federal",
     "topic": "corporate",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "corporations_canada_annual_return",
@@ -21,7 +23,8 @@
     "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
     "jurisdiction": "federal",
     "topic": "corporate",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "corporations_canada_individuals_significant_control",
@@ -29,7 +32,8 @@
     "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
     "jurisdiction": "federal",
     "topic": "corporate",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "ontario_business_registry",
@@ -37,7 +41,8 @@
     "url": "https://www.ontario.ca/page/ontario-business-registry",
     "jurisdiction": "Ontario",
     "topic": "corporate",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "cra_business_number_program_accounts",
@@ -45,7 +50,8 @@
     "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/how-register/resident.html",
     "jurisdiction": "federal",
     "topic": "tax",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": false
   },
   {
     "id": "cra_gst_hst_businesses",
@@ -53,7 +59,8 @@
     "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
     "jurisdiction": "federal",
     "topic": "tax",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": false
   },
   {
     "id": "cra_payroll_deductions_remittances",
@@ -61,7 +68,8 @@
     "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001.html",
     "jurisdiction": "federal",
     "topic": "payroll",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": false
   },
   {
     "id": "cra_sred_tax_incentive_program",
@@ -69,7 +77,8 @@
     "url": "https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html",
     "jurisdiction": "federal",
     "topic": "tax",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": false
   },
   {
     "id": "pipeda",
@@ -77,7 +86,8 @@
     "url": "https://laws-lois.justice.gc.ca/eng/acts/p-8.6/",
     "jurisdiction": "federal",
     "topic": "privacy",
-    "source_type": "statute"
+    "source_type": "statute",
+    "enabled": true
   },
   {
     "id": "opc_privacy_guide_for_businesses",
@@ -85,7 +95,8 @@
     "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/guide_org/",
     "jurisdiction": "federal",
     "topic": "privacy",
-    "source_type": "regulator_guide"
+    "source_type": "regulator_guide",
+    "enabled": true
   },
   {
     "id": "opc_mandatory_privacy_breach_reporting",
@@ -93,7 +104,8 @@
     "url": "https://www.priv.gc.ca/en/privacy-topics/business-privacy/breaches-and-safeguards/privacy-breaches-at-your-business/gd_pb_201810/",
     "jurisdiction": "federal",
     "topic": "privacy",
-    "source_type": "regulator_guide"
+    "source_type": "regulator_guide",
+    "enabled": true
   },
   {
     "id": "crtc_casl_guidance",
@@ -101,7 +113,8 @@
     "url": "https://crtc.gc.ca/eng/com500/guide.htm",
     "jurisdiction": "federal",
     "topic": "marketing",
-    "source_type": "regulator_guide"
+    "source_type": "regulator_guide",
+    "enabled": true
   },
   {
     "id": "competition_bureau_deceptive_marketing",
@@ -109,7 +122,8 @@
     "url": "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/misleading-representations-and-deceptive-marketing-practices",
     "jurisdiction": "federal",
     "topic": "marketing",
-    "source_type": "regulator_guide"
+    "source_type": "regulator_guide",
+    "enabled": true
   },
   {
     "id": "cipo_trademarks_guide",
@@ -117,7 +131,8 @@
     "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/trademarks/trademarks-guide",
     "jurisdiction": "federal",
     "topic": "intellectual_property",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "cyber_centre_baseline_controls_smes",
@@ -125,7 +140,8 @@
     "url": "https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations",
     "jurisdiction": "federal",
     "topic": "cybersecurity",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "ontario_employment_standards_act_guide",
@@ -133,7 +149,8 @@
     "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
     "jurisdiction": "Ontario",
     "topic": "employment",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "ontario_health_safety_small_businesses",
@@ -141,7 +158,8 @@
     "url": "https://www.ontario.ca/page/health-and-safety-small-businesses",
     "jurisdiction": "Ontario",
     "topic": "workplace_safety",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   },
   {
     "id": "wsib_register_with_us",
@@ -149,7 +167,8 @@
     "url": "https://www.wsib.ca/en/businesses/registration-and-coverage/register-us",
     "jurisdiction": "Ontario",
     "topic": "workplace_safety",
-    "source_type": "regulator_guide"
+    "source_type": "regulator_guide",
+    "enabled": true
   },
   {
     "id": "ontario_accessibility_rules_businesses_nonprofits",
@@ -157,6 +176,7 @@
     "url": "https://www.ontario.ca/page/accessibility-rules-businesses-and-non-profits",
     "jurisdiction": "Ontario",
     "topic": "accessibility",
-    "source_type": "government_guide"
+    "source_type": "government_guide",
+    "enabled": true
   }
 ]

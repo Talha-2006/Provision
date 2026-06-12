@@ -25,6 +25,7 @@ REQUIRED_SOURCE_FIELDS = {
     "jurisdiction",
     "topic",
     "source_type",
+    "enabled",
 }
 
 
@@ -47,6 +48,11 @@ def read_sources(sources_path: str | Path = DEFAULT_SOURCES_PATH) -> list[dict[s
             missing = ", ".join(sorted(missing_fields))
             raise ValueError(f"Source at index {index} is missing fields: {missing}.")
 
+        if not isinstance(source["enabled"], bool):
+            raise ValueError(
+                f"Source at index {index} field 'enabled' must be a boolean."
+            )
+
     return sources
 
 
@@ -64,6 +70,11 @@ def load_documents(
         session.headers.update({"User-Agent": USER_AGENT})
 
         for source in sources:
+            if not source["enabled"]:
+                continue
+
+            print(f"Fetching: {source['title']}")
+            print(f"URL: {source['url']}")
             try:
                 documents.append(load_source(source, session=session, timeout=timeout))
             except (requests.RequestException, ValueError, RuntimeError):
