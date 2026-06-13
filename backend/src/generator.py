@@ -9,6 +9,7 @@ from typing import Any, Literal
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
+from langsmith import traceable
 from pydantic import BaseModel, Field
 
 if __package__:
@@ -124,7 +125,7 @@ def _empty_retrieval_response() -> ProvisionResponse:
         insufficient_context=True,
     )
 
-
+@traceable(name="Generate Provision Answer")
 def generate_answer(question: str, k: int = 5) -> ProvisionResponse:
     """Retrieve relevant chunks and generate a structured, cited answer."""
     cleaned_question = question.strip()

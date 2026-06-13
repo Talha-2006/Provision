@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
+from langsmith import traceable
 
 COLLECTION_NAME = "provision_compliance"
 EMBEDDING_MODEL = "text-embedding-3-small"
@@ -47,7 +48,7 @@ def get_vectorstore() -> Chroma:
         persist_directory=str(VECTOR_STORE_PATH),
     )
 
-
+@traceable(name="Chroma Retrieval", run_type="retriever")
 def retrieve_documents(query: str, k: int = 5) -> list[RetrievalResult]:
     """Return the top matching chunks and their Chroma distance scores."""
     cleaned_query = query.strip()
