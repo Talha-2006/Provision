@@ -21,3 +21,15 @@ python src/ask.py "What annual filings are required?" --k 8
 
 The CLI prints a source-grounded answer, checklist, risk level, professional-help
 recommendation, insufficient-context flag, and citation metadata.
+
+## Run The API
+
+From the `backend` directory, start the FastAPI development server:
+
+```powershell
+uvicorn api.main:app --reload
+```
+
+Open `http://127.0.0.1:8000/docs` to test `GET /health`, `POST /ask`, and
+`POST /retrieve-debug` through Swagger UI. The API uses the existing vector
+store and does not run ingestion.
