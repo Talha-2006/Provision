@@ -33,3 +33,16 @@ uvicorn api.main:app --reload
 Open `http://127.0.0.1:8000/docs` to test `GET /health`, `POST /ask`, and
 `POST /retrieve-debug` through Swagger UI. The API uses the existing vector
 store and does not run ingestion.
+
+## Run The Frontend
+
+The frontend is a Next.js application. From the `frontend` directory:
+
+```powershell
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000` to view the Provision landing page. The initial
+prompt experience is currently a visual prototype and is not yet connected to
+the FastAPI `/ask` endpoint.
