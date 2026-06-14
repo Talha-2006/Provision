@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, KeyboardEvent, useState } from "react";
 
 const suggestions = [
@@ -94,9 +95,16 @@ export default function Home() {
 
         <div className="nav-links">
           <a href="#how-it-works">How it works</a>
-          <a href="#sources">Sources</a>
+          <a href="/sources">Sources</a>
           <span className="jurisdiction-pill">
-            <span className="maple-leaf">+</span>
+            <Image
+              className="canada-flag"
+              src="/canada-flag.svg"
+              width={18}
+              height={12}
+              alt=""
+              unoptimized
+            />
             Canada
           </span>
         </div>

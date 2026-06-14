@@ -45,4 +45,5 @@ npm run dev
 
 Open `http://localhost:3000` to view the Provision landing page. The initial
 prompt experience is currently a visual prototype and is not yet connected to
-the FastAPI `/ask` endpoint.
+the FastAPI `/ask` endpoint. Visit `http://localhost:3000/sources` to browse the
+enabled research sources defined in `data/sources.json`.
