@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, KeyboardEvent, useState } from "react";
 
 const suggestions = [
   "Incorporating in Ontario",
@@ -37,19 +37,55 @@ function ShieldMark() {
 
 export default function Home() {
   const [question, setQuestion] = useState("");
+  const [submittedQuestion, setSubmittedQuestion] = useState<string | null>(
+    null,
+  );
+
+  function askQuestion() {
+    const nextQuestion = question.trim();
+
+    if (!nextQuestion) {
+      return;
+    }
+
+    setSubmittedQuestion(nextQuestion);
+    setQuestion("");
+  }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    askQuestion();
+  }
+
+  function handleQuestionKeyDown(
+    event: KeyboardEvent<HTMLTextAreaElement>,
+  ) {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault();
+      askQuestion();
+    }
+  }
+
+  function resetConversation() {
+    setQuestion("");
+    setSubmittedQuestion(null);
   }
 
   return (
-    <main className="site-shell">
+    <main
+      className={`site-shell ${submittedQuestion ? "conversation-active" : ""}`}
+    >
       <div className="background-grid" />
       <div className="red-haze red-haze-top" />
       <div className="red-haze red-haze-center" />
 
       <nav className="topbar" aria-label="Main navigation">
-        <a className="brand" href="#" aria-label="Provision home">
+        <a
+          className="brand"
+          href="#"
+          aria-label="Provision home"
+          onClick={resetConversation}
+        >
           <span className="brand-mark">
             <ShieldMark />
           </span>
@@ -60,27 +96,74 @@ export default function Home() {
           <a href="#how-it-works">How it works</a>
           <a href="#sources">Sources</a>
           <span className="jurisdiction-pill">
-            <span className="maple-leaf">✦</span>
+            <span className="maple-leaf">+</span>
             Canada
           </span>
         </div>
       </nav>
 
-      <section className="hero" aria-labelledby="hero-heading">
-        <div className="eyebrow">
-          <span className="eyebrow-dot" />
-          Citation-grounded compliance research
+      <section
+        className={`hero ${submittedQuestion ? "hero-chatting" : ""}`}
+        aria-labelledby="hero-heading"
+      >
+        <div
+          className="intro-content"
+          aria-hidden={Boolean(submittedQuestion)}
+        >
+          <div className="eyebrow">
+            <span className="eyebrow-dot" />
+            Citation-grounded compliance research
+          </div>
+
+          <h1 id="hero-heading">
+            Build your company.
+            <span>Know the rules.</span>
+          </h1>
+
+          <p className="hero-copy">
+            Source-backed answers for Canadian startup compliance, from
+            incorporation to your first hire.
+          </p>
         </div>
 
-        <h1 id="hero-heading">
-          Build your company.
-          <span>Know the rules.</span>
-        </h1>
+        <div
+          className="conversation"
+          aria-live="polite"
+          aria-busy={Boolean(submittedQuestion)}
+        >
+          {submittedQuestion && (
+            <>
+              <div className="message-row message-row-user">
+                <div className="message-block">
+                  <span className="message-author">You</span>
+                  <div className="user-message">{submittedQuestion}</div>
+                </div>
+              </div>
 
-        <p className="hero-copy">
-          Source-backed answers for Canadian startup compliance, from
-          incorporation to your first hire.
-        </p>
+              <div className="message-row message-row-provision">
+                <span className="assistant-mark">
+                  <ShieldMark />
+                </span>
+                <div className="loading-response">
+                  <div className="loading-heading">
+                    <span>Provision is researching</span>
+                    <span className="loading-dots" aria-hidden="true">
+                      <i />
+                      <i />
+                      <i />
+                    </span>
+                  </div>
+                  <p>Reviewing official federal and provincial sources</p>
+                  <div className="answer-skeleton" aria-hidden="true">
+                    <span />
+                    <span />
+                    <span />
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
 
         <div className="prompt-stage">
           <div className="prompt-glow" />
@@ -95,6 +178,7 @@ export default function Home() {
                 rows={1}
                 value={question}
                 onChange={(event) => setQuestion(event.target.value)}
+                onKeyDown={handleQuestionKeyDown}
                 placeholder="Ask about incorporation, taxes, hiring, permits..."
               />
               <button
@@ -114,18 +198,20 @@ export default function Home() {
           </form>
         </div>
 
-        <div className="suggestions" aria-label="Example questions">
-          <span>Try asking</span>
-          {suggestions.map((suggestion) => (
-            <button
-              key={suggestion}
-              type="button"
-              onClick={() => setQuestion(suggestion)}
-            >
-              {suggestion}
-            </button>
-          ))}
-        </div>
+        {!submittedQuestion && (
+          <div className="suggestions" aria-label="Example questions">
+            <span>Try asking</span>
+            {suggestions.map((suggestion) => (
+              <button
+                key={suggestion}
+                type="button"
+                onClick={() => setQuestion(suggestion)}
+              >
+                {suggestion}
+              </button>
+            ))}
+          </div>
+        )}
       </section>
 
       <footer className="footer-note">

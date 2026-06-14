@@ -95,6 +95,14 @@ a {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition:
+    top 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 700ms ease;
+}
+
+.conversation-active .red-haze-center {
+  top: 68%;
+  opacity: 0.045;
 }
 
 .topbar {
@@ -172,6 +180,36 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition:
+    padding 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    justify-content 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-chatting {
+  justify-content: flex-start;
+  padding-top: 24px;
+}
+
+.intro-content {
+  display: flex;
+  width: 100%;
+  max-height: 360px;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transform: translateY(-36px);
+  transform-origin: top center;
+  transition:
+    max-height 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 350ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-chatting .intro-content {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-180px) scale(0.96);
 }
 
 .eyebrow {
@@ -206,6 +244,7 @@ h1 {
 
 h1 span {
   display: block;
+  margin-top: 0.28em;
   color: #8f8985;
 }
 
@@ -217,10 +256,190 @@ h1 span {
   line-height: 1.7;
 }
 
+.conversation {
+  width: min(760px, 100%);
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(36px);
+  transition:
+    max-height 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 420ms ease 180ms,
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1) 100ms,
+    visibility 0s linear 700ms;
+}
+
+.hero-chatting .conversation {
+  max-height: 460px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:
+    max-height 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 420ms ease 180ms,
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1) 100ms,
+    visibility 0s linear;
+}
+
+.message-row {
+  display: flex;
+  width: 100%;
+}
+
+.message-row-user {
+  justify-content: flex-end;
+}
+
+.message-block {
+  display: flex;
+  max-width: min(580px, 82%);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.message-author {
+  padding-right: 5px;
+  color: #625e5b;
+  font-family: var(--app-font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.user-message {
+  padding: 15px 18px;
+  border: 1px solid rgba(255, 97, 90, 0.22);
+  border-radius: 18px 18px 5px 18px;
+  color: #ece8e5;
+  background:
+    linear-gradient(135deg, rgba(255, 73, 67, 0.12), transparent 70%),
+    rgba(27, 23, 23, 0.9);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  text-align: left;
+  animation: user-message-in 520ms cubic-bezier(0.22, 1, 0.36, 1) 180ms both;
+}
+
+.message-row-provision {
+  margin-top: 34px;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  animation: assistant-message-in 560ms cubic-bezier(0.22, 1, 0.36, 1) 420ms
+    both;
+}
+
+.assistant-mark {
+  display: grid;
+  width: 33px;
+  height: 38px;
+  flex: 0 0 33px;
+  place-items: center;
+  color: var(--red-bright);
+  filter: drop-shadow(0 0 10px rgba(241, 63, 63, 0.3));
+}
+
+.assistant-mark svg {
+  width: 25px;
+}
+
+.loading-response {
+  width: min(540px, calc(100% - 48px));
+  padding-top: 2px;
+}
+
+.loading-heading {
+  display: flex;
+  min-height: 24px;
+  align-items: center;
+  gap: 9px;
+  color: #d4cfcb;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.loading-response p {
+  margin: 5px 0 16px;
+  color: #68635f;
+  font-family: var(--app-font-mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.025em;
+}
+
+.loading-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loading-dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--red-bright);
+  animation: loading-dot 1.2s ease-in-out infinite;
+}
+
+.loading-dots i:nth-child(2) {
+  animation-delay: 160ms;
+}
+
+.loading-dots i:nth-child(3) {
+  animation-delay: 320ms;
+}
+
+.answer-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.answer-skeleton span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.answer-skeleton span:nth-child(2) {
+  width: 88%;
+}
+
+.answer-skeleton span:nth-child(3) {
+  width: 63%;
+}
+
+.answer-skeleton span::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 87, 80, 0.14),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: skeleton-scan 1.8s ease-in-out infinite;
+}
+
 .prompt-stage {
   position: relative;
   width: min(720px, 100%);
-  margin-top: 56px;
+  margin-top: 68px;
+  transition:
+    margin 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    width 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-chatting .prompt-stage {
+  width: min(760px, 100%);
+  margin-top: 44px;
 }
 
 .prompt-glow {
@@ -351,6 +570,18 @@ kbd {
   align-items: center;
   justify-content: center;
   gap: 9px;
+  transition:
+    max-height 400ms ease,
+    margin 400ms ease,
+    opacity 250ms ease;
+}
+
+.hero-chatting .suggestions {
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .suggestions > span {
@@ -412,6 +643,47 @@ kbd {
   }
 }
 
+@keyframes user-message-in {
+  from {
+    opacity: 0;
+    transform: translate(28px, 12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes assistant-message-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-dot {
+  0%,
+  60%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes skeleton-scan {
+  to {
+    transform: translateX(100%);
+  }
+}
+
 @media (max-width: 680px) {
   .topbar {
     width: calc(100% - 32px);
@@ -426,12 +698,28 @@ kbd {
     padding-top: 52px;
   }
 
+  .hero-chatting {
+    padding-top: 18px;
+  }
+
   h1 {
     font-size: clamp(3rem, 15vw, 4.6rem);
   }
 
   .prompt-stage {
     margin-top: 42px;
+  }
+
+  .hero-chatting .prompt-stage {
+    margin-top: 34px;
+  }
+
+  .message-block {
+    max-width: 88%;
+  }
+
+  .message-row-provision {
+    margin-top: 28px;
   }
 
   .prompt-card {
