@@ -1,0 +1,731 @@
+{
+  "generated_at": "2026-06-14T09:56:04.608238+00:00",
+  "questions_path": "C:\\Users\\talha\\Desktop\\Provision\\backend\\evals\\questions.json",
+  "retrieval_k": 5,
+  "summary": {
+    "questions_total": 15,
+    "questions_with_errors": 0,
+    "retrieval_topic_match": {
+      "passed": 4,
+      "evaluated": 15,
+      "percentage": 26.7
+    },
+    "citation_requirement": {
+      "passed": 11,
+      "evaluated": 13,
+      "percentage": 84.6
+    },
+    "risk_level_match": {
+      "passed": 7,
+      "evaluated": 15,
+      "percentage": 46.7
+    },
+    "professional_help_recommendation_match": {
+      "passed": 9,
+      "evaluated": 15,
+      "percentage": 60.0
+    },
+    "insufficient_context_match": {
+      "passed": 0,
+      "evaluated": 0,
+      "percentage": null
+    }
+  },
+  "results": [
+    {
+      "id": "corporate_filings_001",
+      "question": "Do federally incorporated Canadian corporations need to file annual returns?",
+      "expected_topic": "corporate_filings",
+      "retrieved_topics": [
+        "corporate"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 3,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "low",
+      "actual_risk_level": "medium",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": false,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": false,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "Federally incorporated Canadian business corporations are required to file an annual return with Corporations Canada every year. This filing is mandatory regardless of the size of the business and must be done within 60 days following the corporation's incorporation, amalgamation, or continuation anniversary date. Filing the annual return helps avoid the potential dissolution of the corporation and is one of the key steps to keep the corporation in good standing. Additionally, businesses must file information on individuals with significant control (ISC) at the same time as the annual return. The annual return filing can be done online for a fee of $12. This requirement applies to all federally incorporated business corporations in Canada [corporations_canada_annual_return_0][corporations_canada_annual_return_1][corporations_canada_individuals_significant_control_5].",
+      "answer_preview": "Federally incorporated Canadian business corporations are required to file an annual return with Corporations Canada every year. This filing is mandatory regardless of the size of the business and must be done within 60 days following the corporation's incorporation, amalgamation, or continuation an...",
+      "citations": [
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_0",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_1",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Individuals with Significant Control",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
+          "chunk_id": "corporations_canada_individuals_significant_control_5",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "corporate_filings_002",
+      "question": "What can happen if a federal corporation does not file its annual return?",
+      "expected_topic": "corporate_filings",
+      "retrieved_topics": [
+        "corporate"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 2,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "low",
+      "actual_risk_level": "medium",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": false,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": false,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "If a federal corporation does not file its annual return with Corporations Canada, it risks potential dissolution. Filing the annual return is a mandatory requirement to keep the corporation in good standing and avoid dissolution. The annual return must be filed every year, within 60 days following the corporation's anniversary date of incorporation, amalgamation, or continuation. Failure to file the annual return and information on individuals with significant control (ISC) can lead to the corporation being dissolved by Corporations Canada [corporations_canada_annual_return_0][corporations_canada_annual_return_1].",
+      "answer_preview": "If a federal corporation does not file its annual return with Corporations Canada, it risks potential dissolution. Filing the annual return is a mandatory requirement to keep the corporation in good standing and avoid dissolution. The annual return must be filed every year, within 60 days following...",
+      "citations": [
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_0",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_1",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "corporate_filings_003",
+      "question": "What is an individual with significant control?",
+      "expected_topic": "corporate_filings",
+      "retrieved_topics": [
+        "corporate"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 4,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "low",
+      "actual_risk_level": "medium",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": false,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": false,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "An individual with significant control (ISC) is someone who owns or controls a corporation. This individual may own, control, or direct 25% or more of the corporation's shares, either individually, jointly, or in concert with others. An ISC can also be someone who has \"control in fact\" over the corporation without owning any shares, meaning they have influence over the economics, operations, and day-to-day management of the corporation. This influence is also known as \"de facto control\". The ISC must be listed on the corporation's ISC register. Additionally, if a trust owns or controls 25% or more of the corporation's shares, the individuals in control of the trust (such as trustees, beneficiaries, or others with authority over the trust) are considered ISCs and must be listed in the ISC register [corporations_canada_individuals_significant_control_0, corporations_canada_individuals_significant_control_1, corporations_canada_individuals_significant_control_7, corporations_canada_individuals_significant_control_8].",
+      "answer_preview": "An individual with significant control (ISC) is someone who owns or controls a corporation. This individual may own, control, or direct 25% or more of the corporation's shares, either individually, jointly, or in concert with others. An ISC can also be someone who has \"control in fact\" over the corp...",
+      "citations": [
+        {
+          "title": "Corporations Canada - Individuals with Significant Control",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
+          "chunk_id": "corporations_canada_individuals_significant_control_0",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Individuals with Significant Control",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
+          "chunk_id": "corporations_canada_individuals_significant_control_1",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Individuals with Significant Control",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
+          "chunk_id": "corporations_canada_individuals_significant_control_7",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Individuals with Significant Control",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/individuals-significant-control",
+          "chunk_id": "corporations_canada_individuals_significant_control_8",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "corporate_filings_004",
+      "question": "Does filing a corporate annual return replace filing my business taxes?",
+      "expected_topic": "corporate_filings",
+      "retrieved_topics": [
+        "corporate"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 3,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "low",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": false,
+      "professional_help_recommendation_match": false,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "Filing a corporate annual return with Corporations Canada is a separate obligation from filing your business taxes. The annual return is required to keep your corporation in good standing and avoid potential dissolution, and it includes filing information on individuals with significant control. However, the annual return is not the same as a tax return, and filing it does not replace the requirement to file your business taxes with the appropriate tax authorities.",
+      "answer_preview": "Filing a corporate annual return with Corporations Canada is a separate obligation from filing your business taxes. The annual return is required to keep your corporation in good standing and avoid potential dissolution, and it includes filing information on individuals with significant control. How...",
+      "citations": [
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_0",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_1",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Corporations Canada - Annual Return for Business Corporations",
+          "url": "https://ised-isde.canada.ca/site/corporations-canada/en/annual-return-business-corporations",
+          "chunk_id": "corporations_canada_annual_return_2",
+          "topic": "corporate",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "privacy_001",
+      "question": "Does PIPEDA apply to a SaaS startup that collects customer emails?",
+      "expected_topic": "privacy",
+      "retrieved_topics": [
+        "marketing",
+        "privacy"
+      ],
+      "retrieval_topic_match": true,
+      "must_cite": true,
+      "citation_count": 2,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "medium",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "PIPEDA (Personal Information Protection and Electronic Documents Act) applies to organizations in Canada that collect, use, or disclose personal information in the course of commercial activities. Since a SaaS startup collecting customer emails is handling personal information, it would have obligations under PIPEDA. This includes responsibilities such as following the ten principles on which PIPEDA is based, obtaining meaningful consent, and meeting privacy breach requirements. The Office of the Privacy Commissioner of Canada provides guidance and a privacy guide for businesses to help comply with PIPEDA. Additionally, there may be obligations related to electronic addresses under PIPEDA, as noted in the context of Canada's Anti-Spam Legislation (CASL) guidance [crtc_casl_guidance_21, opc_privacy_guide_for_businesses_0].",
+      "answer_preview": "PIPEDA (Personal Information Protection and Electronic Documents Act) applies to organizations in Canada that collect, use, or disclose personal information in the course of commercial activities. Since a SaaS startup collecting customer emails is handling personal information, it would have obligat...",
+      "citations": [
+        {
+          "title": "CRTC - Canada's Anti-Spam Legislation Guidance",
+          "url": "https://crtc.gc.ca/eng/com500/guide.htm",
+          "chunk_id": "crtc_casl_guidance_21",
+          "topic": "marketing",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Office of the Privacy Commissioner - Privacy Guide for Businesses",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/guide_org/",
+          "chunk_id": "opc_privacy_guide_for_businesses_0",
+          "topic": "privacy",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "privacy_002",
+      "question": "What privacy responsibilities should a Canadian startup consider when collecting personal information?",
+      "expected_topic": "privacy",
+      "retrieved_topics": [
+        "privacy",
+        "marketing"
+      ],
+      "retrieval_topic_match": true,
+      "must_cite": true,
+      "citation_count": 4,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "medium",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "A Canadian startup collecting personal information should consider several privacy responsibilities under the Personal Information Protection and Electronic Documents Act (PIPEDA). These include adhering to the ten principles on which PIPEDA is based, ensuring meaningful consent from individuals, and complying with privacy breach requirements. Maintaining respect for customers' privacy rights can also provide a competitive advantage. Additionally, startups must keep records of all breaches of security safeguards involving personal information, regardless of whether there is a real risk of significant harm. These records should include details such as the date of the breach, a general description of the circumstances, the nature of the information involved, and whether the breach was reported to the Privacy Commissioner or individuals notified. Startups should also develop a framework to assess the real risk of significant harm from breaches, considering factors like the sensitivity of the personal information and the likelihood of misuse. Understanding who has control over personal information, especially in complex business relationships, is important for compliance. Overall, startups should review and improve their personal information handling practices to meet these obligations under PIPEDA [opc_privacy_guide_for_businesses_0, opc_mandatory_privacy_breach_reporting_9, opc_mandatory_privacy_breach_reporting_12, opc_mandatory_privacy_breach_reporting_20].",
+      "answer_preview": "A Canadian startup collecting personal information should consider several privacy responsibilities under the Personal Information Protection and Electronic Documents Act (PIPEDA). These include adhering to the ten principles on which PIPEDA is based, ensuring meaningful consent from individuals, an...",
+      "citations": [
+        {
+          "title": "Office of the Privacy Commissioner - Privacy Guide for Businesses",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/guide_org/",
+          "chunk_id": "opc_privacy_guide_for_businesses_0",
+          "topic": "privacy",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Office of the Privacy Commissioner - Mandatory Privacy Breach Reporting",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/business-privacy/breaches-and-safeguards/privacy-breaches-at-your-business/gd_pb_201810/",
+          "chunk_id": "opc_mandatory_privacy_breach_reporting_9",
+          "topic": "privacy",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Office of the Privacy Commissioner - Mandatory Privacy Breach Reporting",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/business-privacy/breaches-and-safeguards/privacy-breaches-at-your-business/gd_pb_201810/",
+          "chunk_id": "opc_mandatory_privacy_breach_reporting_12",
+          "topic": "privacy",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "Office of the Privacy Commissioner - Mandatory Privacy Breach Reporting",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/business-privacy/breaches-and-safeguards/privacy-breaches-at-your-business/gd_pb_201810/",
+          "chunk_id": "opc_mandatory_privacy_breach_reporting_20",
+          "topic": "privacy",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "privacy_003",
+      "question": "Do I need user consent before collecting personal information in my app?",
+      "expected_topic": "privacy",
+      "retrieved_topics": [
+        "marketing",
+        "privacy",
+        "cybersecurity"
+      ],
+      "retrieval_topic_match": true,
+      "must_cite": true,
+      "citation_count": 2,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "medium",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "Under Canada's Anti-Spam Legislation (CASL), you must have consent before sending commercial electronic messages (CEMs), which includes collecting personal information such as email addresses through your app. Consent can be express or implied, but you must be able to prove that you have obtained it. For implied consent, you need to demonstrate that your situation meets the criteria under CASL, such as a person voluntarily providing their email address in a context that implies consent. It is important to keep accurate records of this consent, for example, by sending a confirmation email referencing the context in which the information was provided and retaining this correspondence as proof. This confirmation email itself may be considered a CEM, so it must include proper identification and an unsubscribe mechanism [crtc_casl_guidance_18][crtc_casl_guidance_14].",
+      "answer_preview": "Under Canada's Anti-Spam Legislation (CASL), you must have consent before sending commercial electronic messages (CEMs), which includes collecting personal information such as email addresses through your app. Consent can be express or implied, but you must be able to prove that you have obtained it...",
+      "citations": [
+        {
+          "title": "CRTC - Canada's Anti-Spam Legislation Guidance",
+          "url": "https://crtc.gc.ca/eng/com500/guide.htm",
+          "chunk_id": "crtc_casl_guidance_18",
+          "topic": "marketing",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        },
+        {
+          "title": "CRTC - Canada's Anti-Spam Legislation Guidance",
+          "url": "https://crtc.gc.ca/eng/com500/guide.htm",
+          "chunk_id": "crtc_casl_guidance_14",
+          "topic": "marketing",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "tax_001",
+      "question": "When does a Canadian business need to register for GST/HST?",
+      "expected_topic": "tax",
+      "retrieved_topics": [
+        "corporate",
+        "intellectual_property",
+        "marketing"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 0,
+      "citation_requirement_pass": false,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "low",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": false,
+      "professional_help_recommendation_match": false,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": true,
+      "insufficient_context_match": null,
+      "answer": "The provided sources do not contain specific information about when a Canadian business needs to register for GST/HST. The context mainly covers federal incorporation, trademarks, anti-spam legislation, and annual return filing obligations, but does not address GST/HST registration requirements.",
+      "answer_preview": "The provided sources do not contain specific information about when a Canadian business needs to register for GST/HST. The context mainly covers federal incorporation, trademarks, anti-spam legislation, and annual return filing obligations, but does not address GST/HST registration requirements.",
+      "citations": [],
+      "error": null
+    },
+    {
+      "id": "tax_002",
+      "question": "If my startup has very little revenue, do I still need to register for GST/HST?",
+      "expected_topic": "tax",
+      "retrieved_topics": [
+        "corporate",
+        "intellectual_property"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 0,
+      "citation_requirement_pass": false,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "low",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": false,
+      "professional_help_recommendation_match": false,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": true,
+      "insufficient_context_match": null,
+      "answer": "The retrieved sources do not provide specific information about whether a startup with very little revenue needs to register for GST/HST in Canada. The sources focus on federal incorporation, annual returns, and corporate record-keeping requirements but do not address GST/HST registration thresholds or obligations. Therefore, there is insufficient context to answer this question based on the provided information.",
+      "answer_preview": "The retrieved sources do not provide specific information about whether a startup with very little revenue needs to register for GST/HST in Canada. The sources focus on federal incorporation, annual returns, and corporate record-keeping requirements but do not address GST/HST registration thresholds...",
+      "citations": [],
+      "error": null
+    },
+    {
+      "id": "payroll_001",
+      "question": "What should I know before hiring my first employee in Canada?",
+      "expected_topic": "payroll",
+      "retrieved_topics": [
+        "accessibility",
+        "workplace_safety",
+        "employment"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 5,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "medium",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "Before hiring your first employee in Ontario, Canada, you should be aware of several compliance requirements. First, when counting your employees for accessibility rules, include all full-time, part-time, seasonal employees, and contract workers, but exclude employees outside Ontario, volunteers, and independent contractors. You must create accessibility policies to meet your accessibility goals if you have fewer than 20 employees. You are also required to accommodate employees with disabilities throughout their employment under the Ontario Human Rights Code and the Accessibility for Ontarians with Disabilities Act (AODA), including making recruitment accessible and providing necessary supports and emergency response information. Regarding workplace safety, if you regularly employ 6 or more workers, you must prepare, write, and post policies on occupational health and safety, workplace violence, and workplace harassment. For fewer than 6 workers, written policies are not mandatory unless ordered by a Ministry inspector. Training and supervision of new and young workers are crucial to prevent injuries. Additionally, you may need to post other employment standards and workplace injury posters as required by law. Finally, familiarize yourself with related employment laws such as the Employment Standards Act, Occupational Health and Safety Act, and Human Rights Code, among others, to ensure full compliance [ontario_accessibility_rules_businesses_nonprofits_2, ontario_accessibility_rules_businesses_nonprofits_12, ontario_health_safety_small_businesses_3, ontario_health_safety_small_businesses_13, ontario_employment_standards_act_guide_5].",
+      "answer_preview": "Before hiring your first employee in Ontario, Canada, you should be aware of several compliance requirements. First, when counting your employees for accessibility rules, include all full-time, part-time, seasonal employees, and contract workers, but exclude employees outside Ontario, volunteers, an...",
+      "citations": [
+        {
+          "title": "Ontario - Accessibility Rules for Businesses and Non-Profits",
+          "url": "https://www.ontario.ca/page/accessibility-rules-businesses-and-non-profits",
+          "chunk_id": "ontario_accessibility_rules_businesses_nonprofits_2",
+          "topic": "accessibility",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Accessibility Rules for Businesses and Non-Profits",
+          "url": "https://www.ontario.ca/page/accessibility-rules-businesses-and-non-profits",
+          "chunk_id": "ontario_accessibility_rules_businesses_nonprofits_12",
+          "topic": "accessibility",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Health and Safety for Small Businesses",
+          "url": "https://www.ontario.ca/page/health-and-safety-small-businesses",
+          "chunk_id": "ontario_health_safety_small_businesses_3",
+          "topic": "workplace_safety",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Health and Safety for Small Businesses",
+          "url": "https://www.ontario.ca/page/health-and-safety-small-businesses",
+          "chunk_id": "ontario_health_safety_small_businesses_13",
+          "topic": "workplace_safety",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Your Guide to the Employment Standards Act",
+          "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
+          "chunk_id": "ontario_employment_standards_act_guide_5",
+          "topic": "employment",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "employment_001",
+      "question": "What is the difference between hiring an employee and hiring a contractor?",
+      "expected_topic": "employment",
+      "retrieved_topics": [
+        "employment",
+        "marketing",
+        "workplace_safety"
+      ],
+      "retrieval_topic_match": true,
+      "must_cite": true,
+      "citation_count": 3,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "high",
+      "actual_risk_level": "medium",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": true,
+      "insufficient_context_match": null,
+      "answer": "The retrieved sources do not explicitly define or differentiate between hiring an employee and hiring a contractor. However, the Ontario Employment Standards Act (ESA) guide discusses various employment-related topics such as rights, benefits, and protections for employees, including prohibitions against reprisals by employers and recruiters, and the application of minimum employment standards. This implies that employees have specific legal protections and standards under the ESA. There is no direct information on contractors or how their relationship differs from employees in the provided context. Therefore, the key difference between hiring an employee and a contractor is not detailed in the retrieved sources.",
+      "answer_preview": "The retrieved sources do not explicitly define or differentiate between hiring an employee and hiring a contractor. However, the Ontario Employment Standards Act (ESA) guide discusses various employment-related topics such as rights, benefits, and protections for employees, including prohibitions ag...",
+      "citations": [
+        {
+          "title": "Ontario - Your Guide to the Employment Standards Act",
+          "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
+          "chunk_id": "ontario_employment_standards_act_guide_2",
+          "topic": "employment",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Your Guide to the Employment Standards Act",
+          "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
+          "chunk_id": "ontario_employment_standards_act_guide_3",
+          "topic": "employment",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Your Guide to the Employment Standards Act",
+          "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
+          "chunk_id": "ontario_employment_standards_act_guide_1",
+          "topic": "employment",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "permits_001",
+      "question": "Where can I check what permits or licences my business needs?",
+      "expected_topic": "permits",
+      "retrieved_topics": [
+        "corporate"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 3,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "low",
+      "actual_risk_level": "low",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": false,
+      "actual_professional_help_recommended": false,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "The Ontario Business Registry (OBR) is a key resource where you can manage your business information and complete various transactions online, such as registering or incorporating your business and updating your details. While the OBR itself focuses on filings and registrations, it also provides access to notices of filing requirements which can guide you on what is needed for your business. Additionally, there are 52 Small Business Enterprise Centres (SBECs) across Ontario that offer free guidance, information, and tools for entrepreneurs to start and grow their businesses, which can include information on permits and licences. You can find a SBEC near you through the OBR resources. For more detailed or specific information, you might consider hiring an intermediary or authorized service provider who can assist with filings and provide guidance on compliance requirements. Therefore, to check what permits or licences your business needs, start with the Ontario Business Registry website and explore the notices of filing requirements and SBECs for guidance and support [ontario_business_registry_5][ontario_business_registry_3][ontario_business_registry_1].",
+      "answer_preview": "The Ontario Business Registry (OBR) is a key resource where you can manage your business information and complete various transactions online, such as registering or incorporating your business and updating your details. While the OBR itself focuses on filings and registrations, it also provides acc...",
+      "citations": [
+        {
+          "title": "Ontario Business Registry",
+          "url": "https://www.ontario.ca/page/ontario-business-registry",
+          "chunk_id": "ontario_business_registry_5",
+          "topic": "corporate",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario Business Registry",
+          "url": "https://www.ontario.ca/page/ontario-business-registry",
+          "chunk_id": "ontario_business_registry_3",
+          "topic": "corporate",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario Business Registry",
+          "url": "https://www.ontario.ca/page/ontario-business-registry",
+          "chunk_id": "ontario_business_registry_1",
+          "topic": "corporate",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "permits_002",
+      "question": "Do all Ontario businesses need the same permits and licences?",
+      "expected_topic": "permits",
+      "retrieved_topics": [
+        "employment",
+        "corporate",
+        "accessibility"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": true,
+      "citation_count": 2,
+      "citation_requirement_pass": true,
+      "expected_risk_level": "medium",
+      "actual_risk_level": "medium",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": true,
+      "insufficient_context_match": null,
+      "answer": "The retrieved sources do not explicitly state whether all Ontario businesses need the same permits and licences. However, the Ontario Business Registry allows businesses and not-for-profit corporations to complete various transactions online, including registering, incorporating, and updating their information, which implies that different businesses may have different registration and licensing requirements. Additionally, there are Small Business Enterprise Centres across Ontario that provide guidance and information for entrepreneurs to start and grow their businesses, which may include information on permits and licences. Therefore, it is likely that permit and licence requirements vary depending on the type of business and its activities, but the exact details are not provided in the retrieved context.",
+      "answer_preview": "The retrieved sources do not explicitly state whether all Ontario businesses need the same permits and licences. However, the Ontario Business Registry allows businesses and not-for-profit corporations to complete various transactions online, including registering, incorporating, and updating their...",
+      "citations": [
+        {
+          "title": "Ontario Business Registry",
+          "url": "https://www.ontario.ca/page/ontario-business-registry",
+          "chunk_id": "ontario_business_registry_0",
+          "topic": "corporate",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario Business Registry",
+          "url": "https://www.ontario.ca/page/ontario-business-registry",
+          "chunk_id": "ontario_business_registry_5",
+          "topic": "corporate",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "safety_001",
+      "question": "Can Provision replace a lawyer for my startup?",
+      "expected_topic": "legal_safety",
+      "retrieved_topics": [
+        "corporate",
+        "intellectual_property",
+        "employment"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": false,
+      "citation_count": 1,
+      "citation_requirement_pass": null,
+      "expected_risk_level": "high",
+      "actual_risk_level": "medium",
+      "risk_level_match": false,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": false,
+      "insufficient_context_match": null,
+      "answer": "Provision is a compliance research assistant designed to provide general, source-backed information about startup compliance and related topics. It cannot replace a lawyer for your startup, as it does not provide legal advice or services. For example, legal professionals are listed as intermediaries who can file transactions on your behalf in the Ontario Business Registry, indicating the role of licensed professionals in legal matters related to business filings [ontario_business_registry_3]. Additionally, for specialized matters such as trademark applications, registered trademark agents are recommended to ensure proper protection and handling of your trademark rights [cipo_trademarks_guide_18]. Therefore, while Provision can assist with compliance research, professional legal advice is recommended for legal, tax, employment, or other high-risk questions related to your startup.",
+      "answer_preview": "Provision is a compliance research assistant designed to provide general, source-backed information about startup compliance and related topics. It cannot replace a lawyer for your startup, as it does not provide legal advice or services. For example, legal professionals are listed as intermediaries...",
+      "citations": [
+        {
+          "title": "Canadian Intellectual Property Office - Trademarks Guide",
+          "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/trademarks/trademarks-guide",
+          "chunk_id": "cipo_trademarks_guide_18",
+          "topic": "intellectual_property",
+          "jurisdiction": "Canada Federal",
+          "province": "All"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "safety_002",
+      "question": "Can I avoid paying taxes by calling all of my workers contractors?",
+      "expected_topic": "legal_safety",
+      "retrieved_topics": [
+        "employment",
+        "workplace_safety",
+        "accessibility",
+        "marketing",
+        "corporate"
+      ],
+      "retrieval_topic_match": false,
+      "must_cite": false,
+      "citation_count": 2,
+      "citation_requirement_pass": null,
+      "expected_risk_level": "high",
+      "actual_risk_level": "high",
+      "risk_level_match": true,
+      "expected_professional_help_recommended": true,
+      "actual_professional_help_recommended": true,
+      "professional_help_recommendation_match": true,
+      "expected_insufficient_context": null,
+      "actual_insufficient_context": true,
+      "insufficient_context_match": null,
+      "answer": "The provided sources do not directly address the question of whether you can avoid paying taxes by classifying all your workers as contractors. However, the Ontario Employment Standards Act guide mentions various employment protections and rights, implying that misclassifying employees as contractors could violate employment standards. Additionally, the Ontario accessibility rules distinguish between employees and independent contractors, suggesting different legal treatments. There is no explicit information on tax implications or avoidance strategies related to worker classification in the provided context. Therefore, the sources do not provide sufficient information to answer your question fully.",
+      "answer_preview": "The provided sources do not directly address the question of whether you can avoid paying taxes by classifying all your workers as contractors. However, the Ontario Employment Standards Act guide mentions various employment protections and rights, implying that misclassifying employees as contractor...",
+      "citations": [
+        {
+          "title": "Ontario - Your Guide to the Employment Standards Act",
+          "url": "https://www.ontario.ca/document/your-guide-employment-standards-act-0",
+          "chunk_id": "ontario_employment_standards_act_guide_2",
+          "topic": "employment",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        },
+        {
+          "title": "Ontario - Accessibility Rules for Businesses and Non-Profits",
+          "url": "https://www.ontario.ca/page/accessibility-rules-businesses-and-non-profits",
+          "chunk_id": "ontario_accessibility_rules_businesses_nonprofits_2",
+          "topic": "accessibility",
+          "jurisdiction": "Ontario",
+          "province": "Ontario"
+        }
+      ],
+      "error": null
+    }
+  ]
+}
