@@ -1,13 +1,37 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, KeyboardEvent, useState } from "react";
+import {
+  FormEvent,
+  KeyboardEvent,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 const suggestions = [
-  "Incorporating in Ontario",
-  "Hiring my first employee",
-  "Canadian sales tax basics",
+  "Do federally incorporated Canadian corporations need to file annual returns?",
+  "Does PIPEDA apply to a SaaS startup that collects customer emails?",
+  "What should I know before hiring my first employee in Canada?",
 ];
+
+type Citation = {
+  title: string;
+  url: string;
+  chunk_id: string;
+  topic: string;
+  jurisdiction: string;
+  province: string;
+};
+
+type ProvisionResponse = {
+  answer: string;
+  checklist: string[];
+  citations: Citation[];
+  risk_level: "low" | "medium" | "high";
+  professional_help_recommended: boolean;
+  insufficient_context: boolean;
+};
 
 function ArrowIcon() {
   return (
@@ -37,20 +61,98 @@ function ShieldMark() {
 }
 
 export default function Home() {
+  const disclaimerDialogRef = useRef<HTMLDialogElement>(null);
+  const requestController = useRef<AbortController | null>(null);
   const [question, setQuestion] = useState("");
   const [submittedQuestion, setSubmittedQuestion] = useState<string | null>(
     null,
   );
+  const [response, setResponse] = useState<ProvisionResponse | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  function askQuestion() {
+  useEffect(() => {
+    const dialog = disclaimerDialogRef.current;
+
+    if (dialog && !dialog.open) {
+      dialog.showModal();
+    }
+
+    return () => {
+      requestController.current?.abort();
+
+      if (dialog?.open) {
+        dialog.close();
+      }
+    };
+  }, []);
+
+  function acceptDisclaimer() {
+    disclaimerDialogRef.current?.close();
+  }
+
+  async function askQuestion() {
     const nextQuestion = question.trim();
 
-    if (!nextQuestion) {
+    if (!nextQuestion || isLoading) {
       return;
     }
 
     setSubmittedQuestion(nextQuestion);
     setQuestion("");
+    setResponse(null);
+    setError(null);
+    setIsLoading(true);
+
+    requestController.current?.abort();
+    const controller = new AbortController();
+    requestController.current = controller;
+
+    try {
+      const apiResponse = await fetch("/api/ask", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          question: nextQuestion,
+          k: 5,
+        }),
+        signal: controller.signal,
+      });
+
+      const data = (await apiResponse.json()) as
+        | ProvisionResponse
+        | { detail?: string };
+
+      if (!apiResponse.ok) {
+        throw new Error(
+          "detail" in data && data.detail
+            ? data.detail
+            : "Provision could not generate an answer.",
+        );
+      }
+
+      setResponse(data as ProvisionResponse);
+    } catch (requestError) {
+      if (
+        requestError instanceof DOMException &&
+        requestError.name === "AbortError"
+      ) {
+        return;
+      }
+
+      setError(
+        requestError instanceof Error
+          ? requestError.message
+          : "Provision could not generate an answer.",
+      );
+    } finally {
+      if (requestController.current === controller) {
+        requestController.current = null;
+        setIsLoading(false);
+      }
+    }
   }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -68,8 +170,13 @@ export default function Home() {
   }
 
   function resetConversation() {
+    requestController.current?.abort();
+    requestController.current = null;
     setQuestion("");
     setSubmittedQuestion(null);
+    setResponse(null);
+    setError(null);
+    setIsLoading(false);
   }
 
   return (
@@ -124,7 +231,7 @@ export default function Home() {
           </div>
 
           <h1 id="hero-heading">
-            Build your company.
+            Build your startup.
             <span>Know the rules.</span>
           </h1>
 
@@ -137,7 +244,7 @@ export default function Home() {
         <div
           className="conversation"
           aria-live="polite"
-          aria-busy={Boolean(submittedQuestion)}
+          aria-busy={isLoading}
         >
           {submittedQuestion && (
             <>
@@ -152,22 +259,76 @@ export default function Home() {
                 <span className="assistant-mark">
                   <ShieldMark />
                 </span>
-                <div className="loading-response">
-                  <div className="loading-heading">
-                    <span>Provision is researching</span>
-                    <span className="loading-dots" aria-hidden="true">
-                      <i />
-                      <i />
-                      <i />
-                    </span>
+                {isLoading && (
+                  <div className="loading-response">
+                    <div className="loading-heading">
+                      <span>Provision is researching</span>
+                      <span className="loading-dots" aria-hidden="true">
+                        <i />
+                        <i />
+                        <i />
+                      </span>
+                    </div>
+                    <p>Reviewing official federal and provincial sources</p>
+                    <div className="answer-skeleton" aria-hidden="true">
+                      <span />
+                      <span />
+                      <span />
+                    </div>
                   </div>
-                  <p>Reviewing official federal and provincial sources</p>
-                  <div className="answer-skeleton" aria-hidden="true">
-                    <span />
-                    <span />
-                    <span />
+                )}
+
+                {error && (
+                  <div className="answer-error" role="alert">
+                    <strong>Unable to generate an answer</strong>
+                    <p>{error}</p>
                   </div>
-                </div>
+                )}
+
+                {response && (
+                  <article className="answer-response">
+                    <div className="answer-heading">
+                      <span>Provision</span>
+                    </div>
+
+                    {response.insufficient_context && (
+                      <div className="answer-notice">
+                        The available sources may be insufficient for a complete
+                        answer.
+                      </div>
+                    )}
+
+                    <div className="answer-copy">{response.answer}</div>
+
+                    {response.citations.length > 0 && (
+                      <section className="answer-section">
+                        <h2>Sources</h2>
+                        <div className="answer-citations">
+                          {response.citations.map((citation, index) => (
+                            <a
+                              href={citation.url}
+                              key={citation.chunk_id}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <span>{index + 1}</span>
+                              <div>
+                                <strong>{citation.title}</strong>
+                                <small>
+                                  {citation.jurisdiction}
+                                  {citation.province !== "Not available"
+                                    ? ` · ${citation.province}`
+                                    : ""}
+                                </small>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                      </section>
+                    )}
+
+                  </article>
+                )}
               </div>
             </>
           )}
@@ -192,7 +353,7 @@ export default function Home() {
               <button
                 type="submit"
                 aria-label="Ask Provision"
-                disabled={!question.trim()}
+                disabled={!question.trim() || isLoading}
               >
                 <ArrowIcon />
               </button>
@@ -226,6 +387,61 @@ export default function Home() {
         <span className="status-dot" />
         General information, not legal or accounting advice
       </footer>
+
+      <dialog
+        ref={disclaimerDialogRef}
+        className="legal-dialog"
+        aria-labelledby="legal-dialog-title"
+        aria-describedby="legal-dialog-description"
+        onCancel={(event) => event.preventDefault()}
+      >
+        <div className="legal-dialog-card">
+          <span className="legal-dialog-mark">
+            <ShieldMark />
+          </span>
+
+          <div className="legal-dialog-eyebrow">Before you continue</div>
+          <h2 id="legal-dialog-title">Important information</h2>
+          <p id="legal-dialog-description" className="legal-dialog-lead">
+            Provision provides general, citation-grounded compliance research.
+            It is not a lawyer, law firm, accountant, or substitute for advice
+            from a qualified professional.
+          </p>
+
+          <ul className="legal-dialog-points">
+            <li>
+              Information may be incomplete, inaccurate, or out of date, and
+              may not apply to your circumstances or jurisdiction.
+            </li>
+            <li>
+              Using Provision does not create a lawyer-client,
+              accountant-client, fiduciary, or other professional relationship.
+            </li>
+            <li>
+              Do not rely on Provision as definitive legal, tax, accounting,
+              employment, or regulatory advice, or as confirmation that you are
+              compliant.
+            </li>
+            <li>
+              Verify important information in the cited official sources and
+              consult a qualified lawyer or accountant before acting on
+              high-risk matters or deadlines.
+            </li>
+          </ul>
+
+          <button
+            className="legal-dialog-button"
+            type="button"
+            onClick={acceptDisclaimer}
+            autoFocus
+          >
+            I understand and agree to continue
+          </button>
+          <p className="legal-dialog-footnote">
+            By continuing, you acknowledge these limitations.
+          </p>
+        </div>
+      </dialog>
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import "server-only";
 
-import { readFileSync } from "node:fs";
-import path from "node:path";
+import sourceData from "../../../data/sources.json";
 
 export type Source = {
   id: string;
@@ -14,8 +13,5 @@ export type Source = {
 };
 
 export function getEnabledSources() {
-  const sourcePath = path.join(process.cwd(), "..", "data", "sources.json");
-  const sourceData = JSON.parse(readFileSync(sourcePath, "utf8")) as Source[];
-
-  return sourceData.filter((source) => source.enabled);
+  return (sourceData as Source[]).filter((source) => source.enabled);
 }

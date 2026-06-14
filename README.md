@@ -43,7 +43,12 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000` to view the Provision landing page. The initial
-prompt experience is currently a visual prototype and is not yet connected to
-the FastAPI `/ask` endpoint. Visit `http://localhost:3000/sources` to browse the
-enabled research sources defined in `data/sources.json`.
+Open `http://localhost:3000` to view the Provision landing page. Keep the
+FastAPI server running at `http://127.0.0.1:8000`; questions are sent to
+`POST /ask` with `k=5`, then the answer and citations are displayed on the main
+page.
+
+To use a different backend URL, copy `frontend/.env.example` to
+`frontend/.env.local` and change `PROVISION_API_URL`. Visit
+`http://localhost:3000/sources` to browse the enabled research sources defined
+in `data/sources.json`.

@@ -88,12 +88,13 @@ export default function SourcesPage() {
               <h1 id="sources-heading">Trusted sources.</h1>
               <p>
                 Provision prioritizes official legislation, government
-                guidance, and regulator resources.
+                guidance, and regulator resources. Its answers are derived from
+                the sources in this research library.
               </p>
             </div>
             <span className="source-count">
               <strong>{enabledSources.length}</strong>
-              enabled sources
+              sources
             </span>
           </div>
         </div>
