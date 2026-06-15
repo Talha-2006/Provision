@@ -16,7 +16,7 @@ from langchain_core.documents import Document
 LOGGER = logging.getLogger(__name__)
 
 DEFAULT_SOURCES_PATH = Path(__file__).resolve().parents[2] / "data" / "sources.json"
-DEFAULT_TIMEOUT_SECONDS = 30
+DEFAULT_TIMEOUT_SECONDS = 15
 USER_AGENT = "Provision/0.1 (Canadian compliance research)"
 REQUIRED_SOURCE_FIELDS = {
     "id",
@@ -68,11 +68,12 @@ def load_documents(
 
     with requests.Session() as session:
         session.headers.update({"User-Agent": USER_AGENT})
-
+        count = 0
         for source in sources:
             if not source["enabled"]:
                 continue
-
+            count += 1
+            print(f"{count}")
             print(f"Fetching: {source['title']}")
             print(f"URL: {source['url']}")
             try:

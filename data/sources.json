@@ -178,5 +178,365 @@
     "topic": "accessibility",
     "source_type": "government_guide",
     "enabled": true
+  },
+  {
+    "id": "canada_starting_a_business",
+    "title": "Government of Canada - Starting a Business",
+    "url": "https://www.canada.ca/en/services/business/start.html",
+    "jurisdiction": "federal",
+    "topic": "startup_planning",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "canada_registering_with_government",
+    "title": "Government of Canada - Registering Your Business with the Government",
+    "url": "https://www.canada.ca/en/services/business/start/register-with-gov.html",
+    "jurisdiction": "federal",
+    "topic": "business_registration",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "canada_business_permits_licences_regulations",
+    "title": "Government of Canada - Permits, Licences and Regulations",
+    "url": "https://www.canada.ca/en/services/business/permits.html",
+    "jurisdiction": "federal",
+    "topic": "permits_licences",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "ontario_start_a_business",
+    "title": "Ontario - Start a Business in Ontario",
+    "url": "https://www.ontario.ca/page/business/start",
+    "jurisdiction": "Ontario",
+    "topic": "startup_planning",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "ontario_check_licences_permits",
+    "title": "Ontario - Check if You Need Licences and Permits",
+    "url": "https://www.ontario.ca/page/business/start/check-licences-permits",
+    "jurisdiction": "Ontario",
+    "topic": "permits_licences",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "ontario_register_business_online",
+    "title": "Ontario - Register Your Business Online",
+    "url": "https://www.ontario.ca/page/business/start/register-your-business-online",
+    "jurisdiction": "Ontario",
+    "topic": "business_registration",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "canada_business_support_financing",
+    "title": "Government of Canada - Getting Business Support and Financing",
+    "url": "https://www.canada.ca/en/services/business/start/support-financing.html",
+    "jurisdiction": "federal",
+    "topic": "funding_financing",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "canada_small_business_financing_program",
+    "title": "ISED - Canada Small Business Financing Program",
+    "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+    "jurisdiction": "federal",
+    "topic": "funding_financing",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "ontario_available_funding_opportunities",
+    "title": "Ontario - Available Funding Opportunities from the Ontario Government",
+    "url": "https://www.ontario.ca/page/available-funding-opportunities-ontario-government",
+    "jurisdiction": "Ontario",
+    "topic": "funding_financing",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_checklist_small_businesses",
+    "title": "CRA - Checklist for Small Businesses",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_corporation_income_tax_return",
+    "title": "CRA - Corporation Income Tax Return",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_completing_t2_return",
+    "title": "CRA - Completing Your Corporation Income Tax T2 Return",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return/completing-your-corporation-income-tax-t2-return.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_keeping_records",
+    "title": "CRA - Keeping Records",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_business_expenses",
+    "title": "CRA - Business Expenses",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/business-expenses.html",
+    "jurisdiction": "federal",
+    "topic": "tax",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_employee_or_self_employed",
+    "title": "CRA - Employee or Self-Employed",
+    "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110/employee-self-employed.html",
+    "jurisdiction": "federal",
+    "topic": "payroll",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_taxable_benefits_allowances",
+    "title": "CRA - Employers' Guide: Taxable Benefits and Allowances",
+    "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4130.html",
+    "jurisdiction": "federal",
+    "topic": "payroll",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cra_t4_slip_information_employers",
+    "title": "CRA - T4 Slip Information for Employers",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4-information-employers/t4-slip.html",
+    "jurisdiction": "federal",
+    "topic": "payroll",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "ontario_posters_required_workplace",
+    "title": "Ontario - Posters Required in the Workplace",
+    "url": "https://www.ontario.ca/page/posters-required-workplace",
+    "jurisdiction": "Ontario",
+    "topic": "employment",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "ontario_preventing_workplace_violence_harassment",
+    "title": "Ontario - Preventing Workplace Violence and Workplace Harassment",
+    "url": "https://www.ontario.ca/page/preventing-workplace-violence-and-workplace-harassment",
+    "jurisdiction": "Ontario",
+    "topic": "workplace_safety",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "ontario_business_guide_consumer_protection",
+    "title": "Ontario - Business Guide to Consumer Protection",
+    "url": "https://www.ontario.ca/document/business-guide-consumer-protection",
+    "jurisdiction": "Ontario",
+    "topic": "consumer_protection",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "ontario_electronic_commerce_act",
+    "title": "Ontario - Electronic Commerce Act, 2000",
+    "url": "https://www.ontario.ca/laws/statute/00e17",
+    "jurisdiction": "Ontario",
+    "topic": "ecommerce",
+    "source_type": "statute",
+    "enabled": false
+  },
+  {
+    "id": "opc_pipeda_requirements_brief",
+    "title": "Office of the Privacy Commissioner - PIPEDA Requirements in Brief",
+    "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/",
+    "jurisdiction": "federal",
+    "topic": "privacy",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "opc_pipeda_fair_information_principles",
+    "title": "Office of the Privacy Commissioner - PIPEDA Fair Information Principles",
+    "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/",
+    "jurisdiction": "federal",
+    "topic": "privacy",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "opc_privacy_ai_business",
+    "title": "Office of the Privacy Commissioner - Privacy and Artificial Intelligence",
+    "url": "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/",
+    "jurisdiction": "federal",
+    "topic": "privacy_ai",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "crtc_casl_faq",
+    "title": "CRTC - Frequently Asked Questions about Canada's Anti-Spam Legislation",
+    "url": "https://crtc.gc.ca/eng/com500/faq500.htm",
+    "jurisdiction": "federal",
+    "topic": "marketing",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "competition_bureau_deceptive_marketing_digest",
+    "title": "Competition Bureau - Deceptive Marketing Practices Digest",
+    "url": "https://competition-bureau.canada.ca/en/how-we-foster-competition/education-and-outreach/deceptive-marketing-practices-digest",
+    "jurisdiction": "federal",
+    "topic": "marketing",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "competition_bureau_false_misleading_representations",
+    "title": "Competition Bureau - False or Misleading Representations",
+    "url": "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/false-or-misleading-representations",
+    "jurisdiction": "federal",
+    "topic": "marketing",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "cipo_patents",
+    "title": "Canadian Intellectual Property Office - Patents",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents",
+    "jurisdiction": "federal",
+    "topic": "intellectual_property",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "cipo_copyright",
+    "title": "Canadian Intellectual Property Office - Copyright",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright",
+    "jurisdiction": "federal",
+    "topic": "intellectual_property",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "cipo_industrial_designs_guide",
+    "title": "Canadian Intellectual Property Office - Industrial Designs Guide",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/industrial-designs/industrial-designs-guide",
+    "jurisdiction": "federal",
+    "topic": "intellectual_property",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "cipo_ip_ownership_new_ideas",
+    "title": "Canadian Intellectual Property Office - Prove Who Owns New Ideas and Creations",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/prove-who-owns-new-ideas-and-creations",
+    "jurisdiction": "federal",
+    "topic": "intellectual_property",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "cybersecure_canada",
+    "title": "ISED - CyberSecure Canada",
+    "url": "https://ised-isde.canada.ca/site/cybersecure-canada/en/cybersecure-canada",
+    "jurisdiction": "federal",
+    "topic": "cybersecurity",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "cyber_centre_foundational_cyber_actions_small_orgs",
+    "title": "Canadian Centre for Cyber Security - Foundational Cyber Security Actions for Small Organizations",
+    "url": "https://www.cyber.gc.ca/en/guidance/foundational-cyber-security-actions-small-organizations-itsap10300",
+    "jurisdiction": "federal",
+    "topic": "cybersecurity",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "cbsa_import_commercial_goods_guide",
+    "title": "CBSA - Guide to Importing Commercial Goods into Canada",
+    "url": "https://www.cbsa-asfc.gc.ca/import/guide-eng.html",
+    "jurisdiction": "federal",
+    "topic": "import_export",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "global_affairs_export_from_canada",
+    "title": "Global Affairs Canada - Export from Canada",
+    "url": "https://international.canada.ca/en/services/business/trade/export",
+    "jurisdiction": "federal",
+    "topic": "import_export",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "health_canada_consumer_product_safety_industry",
+    "title": "Health Canada - Consumer Product Safety for Industry and Health Professionals",
+    "url": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/industry-professionals.html",
+    "jurisdiction": "federal",
+    "topic": "product_safety",
+    "source_type": "government_guide",
+    "enabled": false
+  },
+  {
+    "id": "cfia_food_labelling_industry",
+    "title": "CFIA - Food Labelling for Industry",
+    "url": "https://inspection.canada.ca/en/food-labels/labelling/industry",
+    "jurisdiction": "federal",
+    "topic": "food_labelling",
+    "source_type": "government_guide",
+    "enabled": true
+  },
+  {
+    "id": "osc_exempt_market",
+    "title": "Ontario Securities Commission - The Exempt Market",
+    "url": "https://www.osc.ca/en/industry/companies/selling-securities-ontario/exempt-market",
+    "jurisdiction": "Ontario",
+    "topic": "fundraising_securities",
+    "source_type": "regulator_guide",
+    "enabled": false
+  },
+  {
+    "id": "fintrac_money_services_businesses",
+    "title": "FINTRAC - Money Services Businesses",
+    "url": "https://fintrac-canafe.canada.ca/msb-esm/msb-eng",
+    "jurisdiction": "federal",
+    "topic": "fintech_payments",
+    "source_type": "regulator_guide",
+    "enabled": true
+  },
+  {
+    "id": "bank_of_canada_retail_payments",
+    "title": "Bank of Canada - Retail Payments Supervision",
+    "url": "https://www.bankofcanada.ca/regulatory-oversight/retail-payments/",
+    "jurisdiction": "federal",
+    "topic": "fintech_payments",
+    "source_type": "regulator_guide",
+    "enabled": true
   }
 ]
