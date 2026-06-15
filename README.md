@@ -51,4 +51,5 @@ page.
 To use a different backend URL, copy `frontend/.env.example` to
 `frontend/.env.local` and change `PROVISION_API_URL`. Visit
 `http://localhost:3000/sources` to browse the enabled research sources defined
-in `data/sources.json`.
+in `data/sources.json`, or `http://localhost:3000/about` to learn about the
+project, its scope, and how its retrieval pipeline works.

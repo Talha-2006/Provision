@@ -201,7 +201,7 @@ export default function Home() {
         </a>
 
         <div className="nav-links">
-          <a href="#how-it-works">How it works</a>
+          <a href="/about">About</a>
           <a href="/sources">Sources</a>
           <span className="jurisdiction-pill">
             <Image
