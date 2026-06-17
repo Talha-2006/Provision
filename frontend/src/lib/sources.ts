@@ -1,6 +1,6 @@
 import "server-only";
 
-import sourceData from "../data/sources.json";
+import sourceData from "../../../data/sources.json";
 
 export type Source = {
   id: string;
