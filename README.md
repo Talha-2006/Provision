@@ -31,8 +31,14 @@ uvicorn api.main:app --reload
 ```
 
 Open `http://127.0.0.1:8000/docs` to test `GET /health`, `POST /ask`, and
-`POST /retrieve-debug` through Swagger UI. The API uses the existing vector
-store and does not run ingestion.
+`POST /retrieve-debug` through Swagger UI when debug endpoints are enabled.
+The API uses the existing vector store and does not run ingestion.
+
+`POST /ask` is rate limited by `ASK_RATE_LIMIT`, which defaults to
+`5/minute`. `POST /retrieve-debug` is disabled by default with
+`ENABLE_DEBUG_ENDPOINTS=false`; set it to `true` for local retrieval debugging.
+When enabled, it is rate limited by `DEBUG_RATE_LIMIT`, which defaults to
+`3/minute`.
 
 ## Run With Docker
 
