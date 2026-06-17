@@ -34,6 +34,24 @@ Open `http://127.0.0.1:8000/docs` to test `GET /health`, `POST /ask`, and
 `POST /retrieve-debug` through Swagger UI. The API uses the existing vector
 store and does not run ingestion.
 
+## Run With Docker
+
+From the repository root, build the backend image:
+
+```powershell
+docker build -t provision-backend ./backend
+```
+
+Run it with the local environment variables:
+
+```powershell
+docker run --rm -p 8000:8000 --env-file backend/.env provision-backend
+```
+
+The API is available at `http://127.0.0.1:8000`, with Swagger UI at
+`http://127.0.0.1:8000/docs`. The existing Chroma vector store is copied into
+the image during the build; `.env` is excluded and supplied only at runtime.
+
 ## Run The Frontend
 
 The frontend is a Next.js application. From the `frontend` directory:
