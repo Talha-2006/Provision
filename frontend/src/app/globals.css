@@ -1102,11 +1102,13 @@ kbd {
 }
 
 .legal-dialog-footnote {
-  margin: 12px 0 0;
-  color: #5f5a57;
+  margin: 13px 0 0;
+  color: #aaa29d;
   font-family: var(--app-font-mono);
-  font-size: 0.59rem;
-  line-height: 1.45;
+  font-size: 0.66rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .sources-shell {

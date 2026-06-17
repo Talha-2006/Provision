@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 };
 
 const topics = [
-  "Federal incorporation obligations",
-  "Annual returns",
-  "Individuals with significant control",
-  "Canadian privacy and PIPEDA basics",
-  "GST/HST registration basics",
-  "Payroll setup basics",
-  "Employee vs contractor considerations",
-  "Ontario business registration",
-  "Permits and licences",
-  "General startup compliance checklists",
+  "Incorporation and corporate governance",
+  "Business registration, licences, and permits",
+  "Privacy, PIPEDA, and breach response",
+  "Employment standards and workplace safety",
+  "CASL and deceptive marketing practices",
+  "Trademarks, patents, and intellectual property",
+  "Cybersecurity for small organizations",
+  "Consumer protection and accessibility",
+  "Importing and exporting goods",
+  "Startup funding and financing programs",
 ];
 
 const steps = [
