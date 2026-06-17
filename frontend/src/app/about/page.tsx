@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import MobileNav from "../mobile-nav";
+
 export const metadata: Metadata = {
   title: "About | Provision",
   description:
@@ -81,22 +83,25 @@ export default function AboutPage() {
           <span>PROVISION</span>
         </Link>
 
-        <div className="nav-links">
-          <Link className="nav-link-active" href="/about">
-            About
-          </Link>
-          <Link href="/sources">Sources</Link>
-          <span className="jurisdiction-pill">
-            <Image
-              className="canada-flag"
-              src="/canada-flag.svg"
-              width={18}
-              height={12}
-              alt=""
-              unoptimized
-            />
-            Canada
-          </span>
+        <div className="nav-actions">
+          <div className="nav-links">
+            <Link className="nav-link-active" href="/about">
+              About
+            </Link>
+            <Link href="/sources">Sources</Link>
+            <span className="jurisdiction-pill">
+              <Image
+                className="canada-flag"
+                src="/canada-flag.svg"
+                width={18}
+                height={12}
+                alt=""
+                unoptimized
+              />
+              Canada
+            </span>
+          </div>
+          <MobileNav activePage="about" />
         </div>
       </nav>
 

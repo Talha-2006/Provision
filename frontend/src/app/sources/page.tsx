@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { getEnabledSources } from "@/lib/sources";
+import MobileNav from "../mobile-nav";
 
 export const metadata: Metadata = {
   title: "Sources | Provision",
@@ -58,22 +59,25 @@ export default function SourcesPage() {
           <span>PROVISION</span>
         </Link>
 
-        <div className="nav-links">
-          <Link href="/about">About</Link>
-          <Link className="nav-link-active" href="/sources">
-            Sources
-          </Link>
-          <span className="jurisdiction-pill">
-            <Image
-              className="canada-flag"
-              src="/canada-flag.svg"
-              width={18}
-              height={12}
-              alt=""
-              unoptimized
-            />
-            Canada
-          </span>
+        <div className="nav-actions">
+          <div className="nav-links">
+            <Link href="/about">About</Link>
+            <Link className="nav-link-active" href="/sources">
+              Sources
+            </Link>
+            <span className="jurisdiction-pill">
+              <Image
+                className="canada-flag"
+                src="/canada-flag.svg"
+                width={18}
+                height={12}
+                alt=""
+                unoptimized
+              />
+              Canada
+            </span>
+          </div>
+          <MobileNav activePage="sources" />
         </div>
       </nav>
 

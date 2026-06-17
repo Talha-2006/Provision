@@ -9,6 +9,8 @@ import {
   useState,
 } from "react";
 
+import MobileNav from "./mobile-nav";
+
 const suggestions = [
   "Do federally incorporated Canadian corporations need to file annual returns?",
   "Does PIPEDA apply to a SaaS startup that collects customer emails?",
@@ -200,20 +202,23 @@ export default function Home() {
           <span>PROVISION</span>
         </a>
 
-        <div className="nav-links">
-          <a href="/about">About</a>
-          <a href="/sources">Sources</a>
-          <span className="jurisdiction-pill">
-            <Image
-              className="canada-flag"
-              src="/canada-flag.svg"
-              width={18}
-              height={12}
-              alt=""
-              unoptimized
-            />
-            Canada
-          </span>
+        <div className="nav-actions">
+          <div className="nav-links">
+            <a href="/about">About</a>
+            <a href="/sources">Sources</a>
+            <span className="jurisdiction-pill">
+              <Image
+                className="canada-flag"
+                src="/canada-flag.svg"
+                width={18}
+                height={12}
+                alt=""
+                unoptimized
+              />
+              Canada
+            </span>
+          </div>
+          <MobileNav />
         </div>
       </nav>
 
