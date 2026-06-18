@@ -172,13 +172,9 @@ Edit `data/sources.json` to enable, disable, or add a source. Preserve this sche
 | Metric | Latest result |
 | --- | ---: |
 | Citation requirement | 84.6% (11/13) |
-| Retrieval topic match | 26.7% (4/15) |
-| Risk-level match | 46.7% (7/15) |
 | Professional-help recommendation match | 60.0% (9/15) |
 
 These are baseline results, not production-quality claims. The largest open quality work is improving retrieval/topic evaluation alignment and calibrating safety classifications. LangSmith `@traceable` spans are already present around retrieval and generation for query-level inspection.
-
-See [`docs/evaluation.md`](docs/evaluation.md) for the evaluation contract and [`docs/architecture.md`](docs/architecture.md) for pipeline details.
 
 ## Local development
 
