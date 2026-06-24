@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "answer_canada_business_corporations_act_001",
+    "inputs": {
+      "question": "What federal law sets the rules for incorporating, organizing, and governing a Canada business corporation?"
+    },
+    "outputs": {
+      "reference_answer": "The Canada Business Corporations Act is the main federal statute that governs Canada business corporations. A good answer should connect it to federal incorporation, corporate organization, directors and officers, shareholder rights, corporate records, meetings, amendments, continuance, and dissolution.",
+      "expected_source_ids": [
+        "canada_business_corporations_act"
+      ],
+      "acceptable_source_ids": [
+        "canada_business_corporations_act"
+      ],
+      "expected_source_titles": [
+        "Canada Business Corporations Act"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "corporate",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canada Business Corporations Act",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_corporations_canada_federal_incorporation_001",
+    "inputs": {
+      "question": "How do I federally incorporate a business corporation in Canada through Corporations Canada?"
+    },
+    "outputs": {
+      "reference_answer": "A business can federally incorporate through Corporations Canada by preparing the required incorporation information, choosing a corporate name or numbered name, filing articles of incorporation, providing registered office and director information, and paying the required fee. A good answer should also mention that incorporation creates ongoing filing and record-keeping obligations.",
+      "expected_source_ids": [
+        "corporations_canada_federal_incorporation"
+      ],
+      "acceptable_source_ids": [
+        "corporations_canada_federal_incorporation"
+      ],
+      "expected_source_titles": [
+        "Corporations Canada - Federal Incorporation"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "corporate",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Corporations Canada - Federal Incorporation",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_corporations_canada_annual_return_001",
+    "inputs": {
+      "question": "Does a federal business corporation need to file an annual return with Corporations Canada?"
+    },
+    "outputs": {
+      "reference_answer": "A federal business corporation generally must file an annual return with Corporations Canada every year to keep corporate information up to date. The answer should make clear that an annual return is not the same thing as an income tax return.",
+      "expected_source_ids": [
+        "corporations_canada_annual_return"
+      ],
+      "acceptable_source_ids": [
+        "corporations_canada_annual_return"
+      ],
+      "expected_source_titles": [
+        "Corporations Canada - Annual Return for Business Corporations"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "corporate",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Corporations Canada - Annual Return for Business Corporations",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_corporations_canada_individuals_significant_control_001",
+    "inputs": {
+      "question": "What is an individual with significant control for a federal corporation in Canada?"
+    },
+    "outputs": {
+      "reference_answer": "An individual with significant control is generally a person who has significant ownership, control, or influence over a corporation, including direct or indirect ownership or control of 25% or more of shares or voting rights. A good answer should mention that corporations may need to keep information about these individuals and report required information.",
+      "expected_source_ids": [
+        "corporations_canada_individuals_significant_control"
+      ],
+      "acceptable_source_ids": [
+        "corporations_canada_individuals_significant_control"
+      ],
+      "expected_source_titles": [
+        "Corporations Canada - Individuals with Significant Control"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "corporate",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Corporations Canada - Individuals with Significant Control",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_business_registry_001",
+    "inputs": {
+      "question": "Where can I search, register, or update business information using the Ontario Business Registry?"
+    },
+    "outputs": {
+      "reference_answer": "The Ontario Business Registry is Ontario's online service for searching, registering, and updating business and corporation information. A good answer should say that businesses can use it for filings such as registrations, updates, and other business record changes.",
+      "expected_source_ids": [
+        "ontario_business_registry"
+      ],
+      "acceptable_source_ids": [
+        "ontario_business_registry"
+      ],
+      "expected_source_titles": [
+        "Ontario Business Registry"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "corporate",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario Business Registry",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_pipeda_001",
+    "inputs": {
+      "question": "Which federal Canadian privacy law governs how private sector organizations handle personal information?"
+    },
+    "outputs": {
+      "reference_answer": "PIPEDA is Canada's federal private-sector privacy law for organizations that collect, use, or disclose personal information in the course of commercial activities. A good answer should mention consent, limiting collection/use/disclosure, safeguards, access rights, accountability, and appropriate privacy practices.",
+      "expected_source_ids": [
+        "pipeda"
+      ],
+      "acceptable_source_ids": [
+        "pipeda",
+        "opc_pipeda_requirements_brief",
+        "opc_privacy_guide_for_businesses",
+        "opc_pipeda_fair_information_principles"
+      ],
+      "expected_source_titles": [
+        "Personal Information Protection and Electronic Documents Act"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "privacy",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Personal Information Protection and Electronic Documents Act",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_opc_privacy_guide_for_businesses_001",
+    "inputs": {
+      "question": "What privacy responsibilities should a Canadian business understand under the OPC privacy guide for businesses?"
+    },
+    "outputs": {
+      "reference_answer": "The OPC privacy guide for businesses explains practical responsibilities under PIPEDA, including being accountable for personal information, identifying purposes, obtaining meaningful consent, limiting collection and use, safeguarding information, being open about practices, giving individuals access, and handling complaints.",
+      "expected_source_ids": [
+        "opc_privacy_guide_for_businesses"
+      ],
+      "acceptable_source_ids": [
+        "opc_privacy_guide_for_businesses",
+        "opc_pipeda_requirements_brief",
+        "opc_pipeda_fair_information_principles",
+        "pipeda"
+      ],
+      "expected_source_titles": [
+        "Office of the Privacy Commissioner - Privacy Guide for Businesses"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "privacy",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Office of the Privacy Commissioner - Privacy Guide for Businesses",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_opc_mandatory_privacy_breach_reporting_001",
+    "inputs": {
+      "question": "When does a Canadian business need to report a privacy breach to the Office of the Privacy Commissioner?"
+    },
+    "outputs": {
+      "reference_answer": "A business subject to PIPEDA must report a breach of security safeguards to the Office of the Privacy Commissioner and notify affected individuals when the breach creates a real risk of significant harm. A good answer should also mention keeping records of breaches.",
+      "expected_source_ids": [
+        "opc_mandatory_privacy_breach_reporting"
+      ],
+      "acceptable_source_ids": [
+        "opc_mandatory_privacy_breach_reporting"
+      ],
+      "expected_source_titles": [
+        "Office of the Privacy Commissioner - Mandatory Privacy Breach Reporting"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "privacy",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Office of the Privacy Commissioner - Mandatory Privacy Breach Reporting",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_crtc_casl_guidance_001",
+    "inputs": {
+      "question": "What does CASL say about sending commercial electronic messages to customers in Canada?"
+    },
+    "outputs": {
+      "reference_answer": "CASL generally requires businesses to have consent before sending commercial electronic messages, unless an exception applies. A compliant message should identify the sender, include required contact information, and provide a working unsubscribe mechanism.",
+      "expected_source_ids": [
+        "crtc_casl_guidance"
+      ],
+      "acceptable_source_ids": [
+        "crtc_casl_guidance",
+        "crtc_casl_faq"
+      ],
+      "expected_source_titles": [
+        "CRTC - Canada's Anti-Spam Legislation Guidance"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "marketing",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "CRTC - Canada's Anti-Spam Legislation Guidance",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_competition_bureau_deceptive_marketing_001",
+    "inputs": {
+      "question": "What does the Competition Bureau say about misleading representations and deceptive marketing practices?"
+    },
+    "outputs": {
+      "reference_answer": "The Competition Bureau guidance explains that businesses must avoid representations to the public that are false or misleading in a material respect. A good answer should mention that both the literal meaning and the general impression of marketing claims matter.",
+      "expected_source_ids": [
+        "competition_bureau_deceptive_marketing"
+      ],
+      "acceptable_source_ids": [
+        "competition_bureau_deceptive_marketing",
+        "competition_bureau_false_misleading_representations",
+        "competition_bureau_deceptive_marketing_digest"
+      ],
+      "expected_source_titles": [
+        "Competition Bureau - Misleading Representations and Deceptive Marketing Practices"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "marketing",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Competition Bureau - Misleading Representations and Deceptive Marketing Practices",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cipo_trademarks_guide_001",
+    "inputs": {
+      "question": "How can a Canadian startup protect its brand name or logo with a trademark?"
+    },
+    "outputs": {
+      "reference_answer": "A trademark can help protect a startup's brand identifiers, such as a business name, logo, slogan, or other sign that distinguishes its goods or services. A good answer should mention searching existing marks, filing an application with CIPO, and using registration to strengthen brand protection.",
+      "expected_source_ids": [
+        "cipo_trademarks_guide"
+      ],
+      "acceptable_source_ids": [
+        "cipo_trademarks_guide",
+        "cipo_ip_ownership_new_ideas"
+      ],
+      "expected_source_titles": [
+        "Canadian Intellectual Property Office - Trademarks Guide"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "intellectual_property",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Intellectual Property Office - Trademarks Guide",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cyber_centre_baseline_controls_smes_001",
+    "inputs": {
+      "question": "What baseline cyber security controls should a small or medium organization in Canada consider?"
+    },
+    "outputs": {
+      "reference_answer": "Small and medium organizations should consider baseline cyber security controls such as inventorying assets, applying updates, using secure configurations, enabling multi-factor authentication, backing up data, limiting access, protecting against malware, preparing for incidents, and training staff.",
+      "expected_source_ids": [
+        "cyber_centre_baseline_controls_smes"
+      ],
+      "acceptable_source_ids": [
+        "cyber_centre_baseline_controls_smes",
+        "cyber_centre_foundational_cyber_actions_small_orgs",
+        "cybersecure_canada"
+      ],
+      "expected_source_titles": [
+        "Canadian Centre for Cyber Security - Baseline Cyber Security Controls for Small and Medium Organizations"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "cybersecurity",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Centre for Cyber Security - Baseline Cyber Security Controls for Small and Medium Organizations",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_employment_standards_act_guide_001",
+    "inputs": {
+      "question": "What are the basic employment standards rules for employees and employers in Ontario?"
+    },
+    "outputs": {
+      "reference_answer": "Ontario's Employment Standards Act guide explains minimum employment standards, including wages, hours of work, overtime, vacation, public holidays, leaves, termination, and related employer obligations. A good answer should say these are minimum standards that employers generally cannot contract below.",
+      "expected_source_ids": [
+        "ontario_employment_standards_act_guide"
+      ],
+      "acceptable_source_ids": [
+        "ontario_employment_standards_act_guide"
+      ],
+      "expected_source_titles": [
+        "Ontario - Your Guide to the Employment Standards Act"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "employment",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Your Guide to the Employment Standards Act",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_health_safety_small_businesses_001",
+    "inputs": {
+      "question": "What health and safety duties should a small business employer in Ontario know about?"
+    },
+    "outputs": {
+      "reference_answer": "Ontario small business employers have health and safety duties, including taking reasonable precautions, identifying workplace hazards, providing required information and training, maintaining policies or programs where required, posting required information, and responding properly to injuries or incidents.",
+      "expected_source_ids": [
+        "ontario_health_safety_small_businesses"
+      ],
+      "acceptable_source_ids": [
+        "ontario_health_safety_small_businesses"
+      ],
+      "expected_source_titles": [
+        "Ontario - Health and Safety for Small Businesses"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "workplace_safety",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Health and Safety for Small Businesses",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_wsib_register_with_us_001",
+    "inputs": {
+      "question": "When and how does an Ontario business register with the WSIB?"
+    },
+    "outputs": {
+      "reference_answer": "An Ontario business may need to register with the WSIB if it operates in an industry covered by workplace insurance requirements or hires workers in circumstances requiring coverage. A good answer should mention registration, reporting payroll, paying premiums, and checking coverage obligations.",
+      "expected_source_ids": [
+        "wsib_register_with_us"
+      ],
+      "acceptable_source_ids": [
+        "wsib_register_with_us"
+      ],
+      "expected_source_titles": [
+        "WSIB - Register with Us"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "workplace_safety",
+      "jurisdiction": "Ontario",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "WSIB - Register with Us",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_accessibility_rules_businesses_nonprofits_001",
+    "inputs": {
+      "question": "What accessibility rules apply to businesses and non-profits in Ontario?"
+    },
+    "outputs": {
+      "reference_answer": "Ontario businesses and non-profits may have accessibility obligations under the AODA, with requirements depending on organization type and size. A good answer should mention accessible customer service, accessibility policies, staff training, accessible information and communications, employment-related accessibility, and reporting where required.",
+      "expected_source_ids": [
+        "ontario_accessibility_rules_businesses_nonprofits"
+      ],
+      "acceptable_source_ids": [
+        "ontario_accessibility_rules_businesses_nonprofits"
+      ],
+      "expected_source_titles": [
+        "Ontario - Accessibility Rules for Businesses and Non-Profits"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "accessibility",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Accessibility Rules for Businesses and Non-Profits",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_start_a_business_001",
+    "inputs": {
+      "question": "What steps should I follow to start a business in Ontario?"
+    },
+    "outputs": {
+      "reference_answer": "Starting a business in Ontario usually involves choosing a business structure, choosing and registering a business name if required, understanding tax and business number requirements, checking licences and permits, setting up records and finances, and understanding employer or industry-specific obligations.",
+      "expected_source_ids": [
+        "ontario_start_a_business"
+      ],
+      "acceptable_source_ids": [
+        "ontario_start_a_business"
+      ],
+      "expected_source_titles": [
+        "Ontario - Start a Business in Ontario"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "startup_planning",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Start a Business in Ontario",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_check_licences_permits_001",
+    "inputs": {
+      "question": "How do I check whether my Ontario business needs licences or permits?"
+    },
+    "outputs": {
+      "reference_answer": "An Ontario business should check whether it needs municipal, provincial, or federal licences and permits before operating. A good answer should point the user to checking requirements based on business activity, location, and industry rather than assuming one universal permit applies.",
+      "expected_source_ids": [
+        "ontario_check_licences_permits"
+      ],
+      "acceptable_source_ids": [
+        "ontario_check_licences_permits"
+      ],
+      "expected_source_titles": [
+        "Ontario - Check if You Need Licences and Permits"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "permits_licences",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Check if You Need Licences and Permits",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_register_business_online_001",
+    "inputs": {
+      "question": "How do I register my business online in Ontario?"
+    },
+    "outputs": {
+      "reference_answer": "A business can register online in Ontario through the Ontario Business Registry. A good answer should mention preparing business name and ownership or director information, filing the correct registration or incorporation documents, paying the fee, and keeping the registration information current.",
+      "expected_source_ids": [
+        "ontario_register_business_online"
+      ],
+      "acceptable_source_ids": [
+        "ontario_register_business_online"
+      ],
+      "expected_source_titles": [
+        "Ontario - Register Your Business Online"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "business_registration",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Register Your Business Online",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_canada_small_business_financing_program_001",
+    "inputs": {
+      "question": "What is the Canada Small Business Financing Program and how can it help a startup get financing?"
+    },
+    "outputs": {
+      "reference_answer": "The Canada Small Business Financing Program helps eligible small businesses obtain loans from financial institutions by sharing risk with lenders. A good answer should say that businesses apply through participating lenders and that financing may be used for eligible business assets or improvements, subject to program rules.",
+      "expected_source_ids": [
+        "canada_small_business_financing_program"
+      ],
+      "acceptable_source_ids": [
+        "canada_small_business_financing_program"
+      ],
+      "expected_source_titles": [
+        "ISED - Canada Small Business Financing Program"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "funding_financing",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "ISED - Canada Small Business Financing Program",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_posters_required_workplace_001",
+    "inputs": {
+      "question": "What posters are Ontario employers required to display in the workplace?"
+    },
+    "outputs": {
+      "reference_answer": "Ontario employers may be required to display or provide certain workplace posters and notices, including employment standards and occupational health and safety information. A good answer should tell employers to check the current Ontario poster requirements for their workplace.",
+      "expected_source_ids": [
+        "ontario_posters_required_workplace"
+      ],
+      "acceptable_source_ids": [
+        "ontario_posters_required_workplace"
+      ],
+      "expected_source_titles": [
+        "Ontario - Posters Required in the Workplace"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "employment",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Posters Required in the Workplace",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_preventing_workplace_violence_harassment_001",
+    "inputs": {
+      "question": "What should an Ontario employer do to prevent workplace violence and workplace harassment?"
+    },
+    "outputs": {
+      "reference_answer": "Ontario employers must take steps to prevent workplace violence and workplace harassment, including preparing required policies and programs, assessing risks where required, providing information and instruction, responding to incidents or complaints, and taking reasonable precautions to protect workers.",
+      "expected_source_ids": [
+        "ontario_preventing_workplace_violence_harassment"
+      ],
+      "acceptable_source_ids": [
+        "ontario_preventing_workplace_violence_harassment"
+      ],
+      "expected_source_titles": [
+        "Ontario - Preventing Workplace Violence and Workplace Harassment"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "workplace_safety",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Preventing Workplace Violence and Workplace Harassment",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_ontario_business_guide_consumer_protection_001",
+    "inputs": {
+      "question": "What consumer protection rules should an Ontario business understand before selling to customers?"
+    },
+    "outputs": {
+      "reference_answer": "Ontario consumer protection guidance helps businesses understand obligations when selling to consumers, including avoiding unfair practices, clearly disclosing important terms and charges, following contract rules, and respecting cancellation, refund, and delivery obligations where they apply.",
+      "expected_source_ids": [
+        "ontario_business_guide_consumer_protection"
+      ],
+      "acceptable_source_ids": [
+        "ontario_business_guide_consumer_protection"
+      ],
+      "expected_source_titles": [
+        "Ontario - Business Guide to Consumer Protection"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "consumer_protection",
+      "jurisdiction": "Ontario",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Ontario - Business Guide to Consumer Protection",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_opc_pipeda_requirements_brief_001",
+    "inputs": {
+      "question": "What are the main PIPEDA requirements a business needs to follow in Canada?"
+    },
+    "outputs": {
+      "reference_answer": "PIPEDA requirements include accountability, identifying purposes, meaningful consent, limiting collection, limiting use and disclosure, retention limits, accuracy, safeguards, openness, individual access, and complaint handling. A good answer should summarize these as privacy compliance responsibilities for businesses.",
+      "expected_source_ids": [
+        "opc_pipeda_requirements_brief"
+      ],
+      "acceptable_source_ids": [
+        "opc_pipeda_requirements_brief",
+        "opc_privacy_guide_for_businesses",
+        "opc_pipeda_fair_information_principles",
+        "pipeda"
+      ],
+      "expected_source_titles": [
+        "Office of the Privacy Commissioner - PIPEDA Requirements in Brief"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "privacy",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Office of the Privacy Commissioner - PIPEDA Requirements in Brief",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_opc_pipeda_fair_information_principles_001",
+    "inputs": {
+      "question": "What are PIPEDA's fair information principles for handling personal information?"
+    },
+    "outputs": {
+      "reference_answer": "PIPEDA's fair information principles include accountability, identifying purposes, consent, limiting collection, limiting use, disclosure and retention, accuracy, safeguards, openness, individual access, and challenging compliance. A good answer should explain that these principles guide how organizations handle personal information.",
+      "expected_source_ids": [
+        "opc_pipeda_fair_information_principles"
+      ],
+      "acceptable_source_ids": [
+        "opc_pipeda_fair_information_principles",
+        "opc_pipeda_requirements_brief",
+        "opc_privacy_guide_for_businesses",
+        "pipeda"
+      ],
+      "expected_source_titles": [
+        "Office of the Privacy Commissioner - PIPEDA Fair Information Principles"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "privacy",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Office of the Privacy Commissioner - PIPEDA Fair Information Principles",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_opc_privacy_ai_business_001",
+    "inputs": {
+      "question": "What privacy issues should a business consider when using artificial intelligence with personal information?"
+    },
+    "outputs": {
+      "reference_answer": "A business using AI with personal information should consider privacy throughout the AI lifecycle, including authority or consent, transparency, purpose limitation, data minimization, safeguards, accuracy, accountability, risk assessment, and the impact on individuals. A good answer should avoid treating AI use as exempt from privacy law.",
+      "expected_source_ids": [
+        "opc_privacy_ai_business"
+      ],
+      "acceptable_source_ids": [
+        "opc_privacy_ai_business"
+      ],
+      "expected_source_titles": [
+        "Office of the Privacy Commissioner - Privacy and Artificial Intelligence"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "privacy_ai",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Office of the Privacy Commissioner - Privacy and Artificial Intelligence",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_crtc_casl_faq_001",
+    "inputs": {
+      "question": "Where can I find answers to common business questions about Canada's anti-spam legislation?"
+    },
+    "outputs": {
+      "reference_answer": "The CRTC CASL FAQ answers common business questions about Canada's anti-spam law, including consent, commercial electronic messages, identification information, unsubscribe mechanisms, exemptions, and compliance responsibilities. A good answer should direct users to the FAQ for scenario-specific CASL questions.",
+      "expected_source_ids": [
+        "crtc_casl_faq"
+      ],
+      "acceptable_source_ids": [
+        "crtc_casl_faq",
+        "crtc_casl_guidance"
+      ],
+      "expected_source_titles": [
+        "CRTC - Frequently Asked Questions about Canada's Anti-Spam Legislation"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "marketing",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "CRTC - Frequently Asked Questions about Canada's Anti-Spam Legislation",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_competition_bureau_deceptive_marketing_digest_001",
+    "inputs": {
+      "question": "Where can I read Competition Bureau examples and guidance about deceptive marketing practices?"
+    },
+    "outputs": {
+      "reference_answer": "The Deceptive Marketing Practices Digest provides Competition Bureau examples and guidance showing how deceptive marketing rules apply in practice. A good answer should explain that it is useful for understanding enforcement examples, pricing claims, disclosures, endorsements, online marketing, and other advertising practices.",
+      "expected_source_ids": [
+        "competition_bureau_deceptive_marketing_digest"
+      ],
+      "acceptable_source_ids": [
+        "competition_bureau_deceptive_marketing_digest",
+        "competition_bureau_deceptive_marketing",
+        "competition_bureau_false_misleading_representations"
+      ],
+      "expected_source_titles": [
+        "Competition Bureau - Deceptive Marketing Practices Digest"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "marketing",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Competition Bureau - Deceptive Marketing Practices Digest",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_competition_bureau_false_misleading_representations_001",
+    "inputs": {
+      "question": "What counts as a false or misleading representation in Canadian advertising or marketing?"
+    },
+    "outputs": {
+      "reference_answer": "A false or misleading representation is a representation to the public that is false or misleading in a material respect. A good answer should mention that both the literal wording and the general impression are relevant, and that businesses should substantiate claims before using them in advertising or marketing.",
+      "expected_source_ids": [
+        "competition_bureau_false_misleading_representations"
+      ],
+      "acceptable_source_ids": [
+        "competition_bureau_false_misleading_representations",
+        "competition_bureau_deceptive_marketing",
+        "competition_bureau_deceptive_marketing_digest"
+      ],
+      "expected_source_titles": [
+        "Competition Bureau - False or Misleading Representations"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "marketing",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Competition Bureau - False or Misleading Representations",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cipo_patents_001",
+    "inputs": {
+      "question": "How can a Canadian startup protect an invention with a patent?"
+    },
+    "outputs": {
+      "reference_answer": "A patent can protect an invention that is new, useful, and inventive. A good answer should say that a patent application filed with CIPO describes the invention and claims the legal scope of protection, and that a patent can give the owner rights to stop others from making, using, or selling the invention in Canada.",
+      "expected_source_ids": [
+        "cipo_patents"
+      ],
+      "acceptable_source_ids": [
+        "cipo_patents",
+        "cipo_ip_ownership_new_ideas"
+      ],
+      "expected_source_titles": [
+        "Canadian Intellectual Property Office - Patents"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "intellectual_property",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Intellectual Property Office - Patents",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cipo_copyright_001",
+    "inputs": {
+      "question": "What copyright protection applies to original creative work in Canada?"
+    },
+    "outputs": {
+      "reference_answer": "Copyright protects original creative works and certain related subject matter, such as literary, artistic, dramatic, and musical works. A good answer should explain that copyright generally protects expression rather than bare ideas, and that registration can help provide evidence of ownership.",
+      "expected_source_ids": [
+        "cipo_copyright"
+      ],
+      "acceptable_source_ids": [
+        "cipo_copyright",
+        "cipo_ip_ownership_new_ideas"
+      ],
+      "expected_source_titles": [
+        "Canadian Intellectual Property Office - Copyright"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "intellectual_property",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Intellectual Property Office - Copyright",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cipo_industrial_designs_guide_001",
+    "inputs": {
+      "question": "How can a company protect the visual design or appearance of a product in Canada?"
+    },
+    "outputs": {
+      "reference_answer": "Industrial design protection applies to the visual features of a product, such as shape, configuration, pattern, ornament, or combinations of those features. A good answer should mention registration with CIPO and distinguish industrial design from patents, trademarks, and copyright.",
+      "expected_source_ids": [
+        "cipo_industrial_designs_guide"
+      ],
+      "acceptable_source_ids": [
+        "cipo_industrial_designs_guide",
+        "cipo_ip_ownership_new_ideas"
+      ],
+      "expected_source_titles": [
+        "Canadian Intellectual Property Office - Industrial Designs Guide"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "intellectual_property",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Intellectual Property Office - Industrial Designs Guide",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cipo_ip_ownership_new_ideas_001",
+    "inputs": {
+      "question": "How can a startup prove who owns new ideas, inventions, or creative work?"
+    },
+    "outputs": {
+      "reference_answer": "A startup can help prove ownership of ideas and creations by keeping clear records, using written assignments and contractor or employee IP agreements, documenting development history, and registering IP where appropriate. A good answer should warn that ownership can be unclear without written agreements.",
+      "expected_source_ids": [
+        "cipo_ip_ownership_new_ideas"
+      ],
+      "acceptable_source_ids": [
+        "cipo_ip_ownership_new_ideas"
+      ],
+      "expected_source_titles": [
+        "Canadian Intellectual Property Office - Prove Who Owns New Ideas and Creations"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "intellectual_property",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Intellectual Property Office - Prove Who Owns New Ideas and Creations",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cybersecure_canada_001",
+    "inputs": {
+      "question": "What is CyberSecure Canada and how can it help a small business improve cybersecurity?"
+    },
+    "outputs": {
+      "reference_answer": "CyberSecure Canada is a federal cyber certification program for small and medium-sized organizations. A good answer should explain that it helps businesses adopt baseline security controls and demonstrate basic cyber security practices to customers and partners.",
+      "expected_source_ids": [
+        "cybersecure_canada"
+      ],
+      "acceptable_source_ids": [
+        "cybersecure_canada",
+        "cyber_centre_baseline_controls_smes",
+        "cyber_centre_foundational_cyber_actions_small_orgs"
+      ],
+      "expected_source_titles": [
+        "ISED - CyberSecure Canada"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "cybersecurity",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "ISED - CyberSecure Canada",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cyber_centre_foundational_cyber_actions_small_orgs_001",
+    "inputs": {
+      "question": "What foundational cyber security actions should a small organization take first?"
+    },
+    "outputs": {
+      "reference_answer": "Foundational cyber security actions for small organizations include using multi-factor authentication, backing up important data, applying security updates, securing devices and accounts, limiting administrative privileges, training staff, preparing for incidents, and protecting networks and cloud services.",
+      "expected_source_ids": [
+        "cyber_centre_foundational_cyber_actions_small_orgs"
+      ],
+      "acceptable_source_ids": [
+        "cyber_centre_foundational_cyber_actions_small_orgs",
+        "cyber_centre_baseline_controls_smes",
+        "cybersecure_canada"
+      ],
+      "expected_source_titles": [
+        "Canadian Centre for Cyber Security - Foundational Cyber Security Actions for Small Organizations"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "cybersecurity",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Canadian Centre for Cyber Security - Foundational Cyber Security Actions for Small Organizations",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cbsa_import_commercial_goods_guide_001",
+    "inputs": {
+      "question": "What steps does a Canadian business need to follow to import commercial goods into Canada?"
+    },
+    "outputs": {
+      "reference_answer": "A Canadian business importing commercial goods should understand importer registration, tariff classification, origin, duties and taxes, permits or restrictions, customs release and accounting documents, and record-keeping obligations. A good answer should point out that requirements depend on the goods and supply chain.",
+      "expected_source_ids": [
+        "cbsa_import_commercial_goods_guide"
+      ],
+      "acceptable_source_ids": [
+        "cbsa_import_commercial_goods_guide"
+      ],
+      "expected_source_titles": [
+        "CBSA - Guide to Importing Commercial Goods into Canada"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "import_export",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "CBSA - Guide to Importing Commercial Goods into Canada",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_global_affairs_export_from_canada_001",
+    "inputs": {
+      "question": "Where should a Canadian business start if it wants to export products or services from Canada?"
+    },
+    "outputs": {
+      "reference_answer": "A Canadian business that wants to export should assess export readiness, research target markets, understand foreign and Canadian trade requirements, check export controls or permits, plan logistics and customs, and use government trade services where helpful.",
+      "expected_source_ids": [
+        "global_affairs_export_from_canada"
+      ],
+      "acceptable_source_ids": [
+        "global_affairs_export_from_canada"
+      ],
+      "expected_source_titles": [
+        "Global Affairs Canada - Export from Canada"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "import_export",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Global Affairs Canada - Export from Canada",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_cfia_food_labelling_industry_001",
+    "inputs": {
+      "question": "What food labelling rules should a Canadian food business check before selling packaged food?"
+    },
+    "outputs": {
+      "reference_answer": "A Canadian food business should check CFIA food labelling requirements before selling packaged food, including common name, net quantity, ingredients, allergens, nutrition facts, claims, bilingual labelling, date markings, and any product-specific rules.",
+      "expected_source_ids": [
+        "cfia_food_labelling_industry"
+      ],
+      "acceptable_source_ids": [
+        "cfia_food_labelling_industry"
+      ],
+      "expected_source_titles": [
+        "CFIA - Food Labelling for Industry"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "food_labelling",
+      "jurisdiction": "federal",
+      "source_type": "government_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "CFIA - Food Labelling for Industry",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_fintrac_money_services_businesses_001",
+    "inputs": {
+      "question": "When would a fintech or payments startup need to understand FINTRAC money services business rules?"
+    },
+    "outputs": {
+      "reference_answer": "A fintech or payments startup may need to understand FINTRAC money services business rules if it offers services such as money transfers, foreign exchange, money orders, or virtual currency services. A good answer should mention registration, client identification, records, reporting, and anti-money-laundering compliance where applicable.",
+      "expected_source_ids": [
+        "fintrac_money_services_businesses"
+      ],
+      "acceptable_source_ids": [
+        "fintrac_money_services_businesses"
+      ],
+      "expected_source_titles": [
+        "FINTRAC - Money Services Businesses"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "fintech_payments",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "FINTRAC - Money Services Businesses",
+      "has_reference_answer": true
+    }
+  },
+  {
+    "id": "answer_bank_of_canada_retail_payments_001",
+    "inputs": {
+      "question": "What should a payment service provider know about Bank of Canada retail payments supervision?"
+    },
+    "outputs": {
+      "reference_answer": "Payment service providers subject to retail payments supervision may need to register with the Bank of Canada and comply with operational risk management, incident reporting, safeguarding of end-user funds, and reporting obligations. A good answer should mention that applicability depends on the payment activities performed.",
+      "expected_source_ids": [
+        "bank_of_canada_retail_payments"
+      ],
+      "acceptable_source_ids": [
+        "bank_of_canada_retail_payments"
+      ],
+      "expected_source_titles": [
+        "Bank of Canada - Retail Payments Supervision"
+      ]
+    },
+    "metadata": {
+      "eval_type": "rag_answer_quality_and_retrieval",
+      "topic": "fintech_payments",
+      "jurisdiction": "federal",
+      "source_type": "regulator_guide",
+      "difficulty": "easy",
+      "query_style": "natural_language",
+      "expected_source_title": "Bank of Canada - Retail Payments Supervision",
+      "has_reference_answer": true
+    }
+  }
+]
